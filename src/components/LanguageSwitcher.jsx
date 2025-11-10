@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 
 const langs = [
     { code: 'en', label: 'English'},
-    { code: 'sq', label: 'Shqip (XK)'},
+    { code: 'sq', label: 'Shqip XK'},
     { code: 'de', label: 'Deutsch'},
     { code: 'fr', label: 'Français'},
 ]
@@ -22,7 +22,7 @@ function LanguageSwitcher(){
         <select 
             onChange={change} 
             value={i18n.resolvedLanguage} 
-            className="border rounded-md px-1 py-1"
+            className="border border-light-slate rounded px-0.5 py-0.5"
         >
             {langs.map(l => <option className="text-dark-navy" key={l.code} value={l.code}>{l.label}</option>)}
         </select>

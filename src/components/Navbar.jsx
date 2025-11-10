@@ -31,7 +31,7 @@ export default function Navbar(){
           <NavLink to="/contact" className={navClass}>{t('nav.contact')}</NavLink> 
 
           <div className='flex items-center gap-2.5'>
-            <LanguageFlag className="h-5 w-7 shadow ml-4" />
+            <LanguageFlag className="h-5 w-6 shadow ml-4" />
             <LanguageSwitcher class="ml-0" />
           </div>
           
@@ -43,7 +43,7 @@ export default function Navbar(){
           aria-label="Menu"
           aria-expanded={open}
           aria-controls="mobile-menu"
-          onClick={()=>setOpen( s => !s )}
+          onClick={ () => setOpen( s => !s ) }
         >
           <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             {open
