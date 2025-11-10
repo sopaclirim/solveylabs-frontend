@@ -7,13 +7,13 @@ import LanguageFlag from './LanguageFlag';
 const showAdminLogin = import.meta.env.VITE_SHOW_ADMIN_LOGIN === 'true'
 
 export default function Navbar(){
-  const [open, setOpen] = useState(false)
-  const navigate = useNavigate()
+  const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
   const { t } = useTranslation('common');
 
 
   const navClass = ({ isActive }) =>
-  `transition-colors hover:text-[var(--color-accent)] ${
+  `transition-colors hover:text-[var(--color-accent)] ml-0.5 ${
     isActive ? 'text-lightest-slate font-semibold' : ''
   }`;
 
@@ -64,7 +64,7 @@ export default function Navbar(){
           <NavLink to="/contact" className={navClass} onClick={()=>setOpen(false)}>{t('nav.contact')}</NavLink>
 
           <div className="pt-1 flex items-center gap-2">
-            <LanguageFlag className="h-5 w-8 shadow order-2" />
+            <LanguageFlag className="h-5 w-6 shadow order-2" />
             <LanguageSwitcher />
           </div>
         </div>
