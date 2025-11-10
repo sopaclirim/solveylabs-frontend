@@ -1,0 +1,105 @@
+{
+  "brand": "Solvey Labs",
+
+  "nav": {
+    "home": "Startseite",
+    "blog": "Blog",
+    "careers": "Karriere",
+    "contact": "Kontakt",
+    "admin": "Admin",
+    "login": "Admin-Login",
+    "logout": "Abmelden"
+  },
+
+  "hero": {
+    "hi": "Hallo, wir sind",
+    "title": "Solvey Labs.",
+    "subtitle": "Wir bauen die digitale Zukunft.",
+    "tagline": "Wir entwickeln moderne Websites & Apps mit Fokus auf Performance, Sicherheit und minimalistisches Design.",
+    "cta": "Projekt starten"
+  },
+
+  "stats": {
+    "projects": "Projekte",
+    "uptime": "Uptime",
+    "speed": "Lighthouse-Geschwindigkeit",
+    "support": "Kundensupport"
+  },
+
+  "services": {
+    "title": "Was wir anbieten",
+    "subtitle": "Von der Idee bis zum Launch — ein Team, ein hervorragendes Ergebnis.",
+    "s1": "Individuelle Softwareentwicklung",
+    "s1d": "Massgeschneiderte Softwarelösungen für Ihre Bedürfnisse.",
+    "s2": "Webanwendungen",
+    "s2d": "Moderne, schnelle und responsive Anwendungen.",
+    "s3": "Mobile Anwendungen",
+    "s3d": "Native und hybride Apps mit hervorragender UX."
+  },
+
+  "about": {
+    "title": "Unsere Mission",
+    "text": "Bei Solvey Labs befähigen wir Unternehmen mit innovativer Technologie. Die richtige Software transformiert Abläufe, steigert Effizienz und schafft neue Chancen."
+  },
+
+  "careers": {
+    "title": "Werde Teil unseres Teams",
+    "text": "Wir sind immer auf der Suche nach Talenten. Wenn du Technologie liebst und Grosses bauen willst, bewirb dich jetzt.",
+    "name": "Vollständiger Name",
+    "email": "E-Mail",
+    "cv": "Lebenslauf hochladen (PDF)",
+    "msg": "Kurze Nachricht (optional)",
+    "submit": "Bewerbung senden",
+    "ok": "Danke! Deine Bewerbung wurde gesendet.",
+    "teaserTitle": "Schliesse dich unserem Team an",
+    "teaserText": "Wenn du Technologie liebst und schnell wachsen willst, sieh dir unsere offenen Stellen an.",
+    "viewOpenings": "Offene Stellen"
+  },
+
+  "contact": {
+    "title": "Kontakt",
+    "text": "Eine Idee? Eine Frage? Oder einfach nur Hallo sagen? Wir sind für Sie da.",
+    "yourName": "Ihr Name",
+    "yourEmail": "Ihre E-Mail",
+    "subject": "Betreff",
+    "message": "Ihre Nachricht",
+    "send": "Nachricht senden",
+    "ok": "Ihre Nachricht wurde gesendet. Wir melden uns bald."
+  },
+
+  "cta": {
+    "title": "Bereit, etwas Aussergewöhnliches zu bauen?",
+    "text": "Wir verbinden Strategie, Design und Engineering zu Produkten, die Ihr Geschäft voranbringen.",
+    "quote": "Angebot anfragen",
+    "blog": "Blog lesen"
+  },
+
+  "footer": {
+    "rights": "Alle Rechte vorbehalten.",
+    "madeIn": "Mit Leidenschaft in Pristina gestaltet."
+  },
+
+  "blog": { "title": "Blog", "empty": "Noch keine Beiträge." },
+
+  "admin": {
+    "loginTitle": "Admin-Login",
+    "invalid": "Ungültige Anmeldedaten",
+    "title": "Admin — Solvey Labs",
+    "posts": "Beiträge",
+    "applications": "Bewerbungen",
+    "contacts": "Kontakte",
+    "createPost": "Beitrag erstellen",
+    "titleLabel": "Titel",
+    "slug": "Slug",
+    "cover": "Cover-URL (optional)",
+    "content": "Inhalt",
+    "published": "Veröffentlicht",
+    "save": "Speichern",
+    "delete": "Löschen",
+    "status": "Status",
+    "approve": "Freigeben",
+    "cv": "Lebenslauf"
+  },
+
+  "common": { "loading": "Lädt…" }
+}

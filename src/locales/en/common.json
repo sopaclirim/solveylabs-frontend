@@ -1,0 +1,105 @@
+{
+  "brand": "Solvey Labs",
+
+  "nav": {
+    "home": "Home",
+    "blog": "Blog",
+    "careers": "Careers",
+    "contact": "Contact",
+    "admin": "Admin",
+    "login": "Admin Login",
+    "logout": "Log out"
+  },
+
+  "hero": {
+    "hi": "Hello, we are",
+    "title": "Solvey Labs.",
+    "subtitle": "We build the digital future.",
+    "tagline": "We build modern websites & apps with a focus on performance, security, and minimalist design.",
+    "cta": "Let's start a project!"
+  },
+
+  "stats": {
+    "projects": "Projects",
+    "uptime": "Uptime",
+    "speed": "Lighthouse Speed",
+    "support": "Customer Support"
+  },
+
+  "services": {
+    "title": "What We Offer",
+    "subtitle": "From idea to launch — one team, an excellent outcome.",
+    "s1": "Custom Software Development",
+    "s1d": "Tailored software solutions for your needs.",
+    "s2": "Web Applications",
+    "s2d": "Modern, fast and responsive applications.",
+    "s3": "Mobile Applications",
+    "s3d": "Native and hybrid apps with great UX."
+  },
+
+  "about": {
+    "title": "Our Mission",
+    "text": "At Solvey Labs we empower businesses with innovative technology. The right software transforms operations, boosts efficiency, and opens new opportunities."
+  },
+
+  "careers": {
+    "title": "Join Our Team",
+    "text": "We’re always looking for talent. If you love tech and want to build great things, apply now.",
+    "name": "Full Name",
+    "email": "Email",
+    "cv": "Upload CV (PDF)",
+    "msg": "Short message (optional)",
+    "submit": "Submit Application",
+    "ok": "Thank you! Your application has been sent.",
+    "teaserTitle": "Join our team",
+    "teaserText": "If you love technology and want to grow fast, check our open positions.",
+    "viewOpenings": "View openings"
+  },
+
+  "contact": {
+    "title": "Contact Us",
+    "text": "Got an idea? A question? Or just want to say hi? We’re here for you.",
+    "yourName": "Your Name",
+    "yourEmail": "Your Email",
+    "subject": "Subject",
+    "message": "Your Message",
+    "send": "Send Message",
+    "ok": "Your message has been sent. We’ll contact you soon."
+  },
+
+  "cta": {
+    "title": "Ready to build something exceptional?",
+    "text": "We combine strategy, design and engineering to deliver products that grow your business.",
+    "quote": "Request a quote",
+    "blog": "Read the blog"
+  },
+
+  "footer": {
+    "rights": "All rights reserved.",
+    "madeIn": "Designed with passion in Prishtina."
+  },
+
+  "blog": { "title": "Blog", "empty": "No posts yet." },
+
+  "admin": {
+    "loginTitle": "Admin Login",
+    "invalid": "Invalid credentials",
+    "title": "Admin — Solvey Labs",
+    "posts": "Posts",
+    "applications": "Applications",
+    "contacts": "Contacts",
+    "createPost": "Create Post",
+    "titleLabel": "Title",
+    "slug": "Slug",
+    "cover": "Cover URL (optional)",
+    "content": "Content",
+    "published": "Published",
+    "save": "Save",
+    "delete": "Delete",
+    "status": "Status",
+    "approve": "Approve",
+    "cv": "CV"
+  },
+
+  "common": { "loading": "Loading…" }
+}

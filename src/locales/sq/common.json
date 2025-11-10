@@ -1,0 +1,105 @@
+{
+  "brand": "Solvey Labs",
+
+  "nav": {
+    "home": "Ballina",
+    "blog": "Blog",
+    "careers": "Punësime",
+    "contact": "Kontakt",
+    "admin": "Admin",
+    "login": "Hyrje Admin",
+    "logout": "Dil"
+  },
+
+  "hero": {
+    "hi": "Përshëndetje, ne jemi",
+    "title": "Solvey Labs.",
+    "subtitle": "Ne ndërtojmë të ardhmen dixhitale.",
+    "tagline": "Ndërtojmë faqe & aplikacione moderne me fokus në performancë, siguri dhe dizajn minimalist.",
+    "cta": "Le të fillojmë një projekt!"
+  },
+
+  "stats": {
+    "projects": "Projekte",
+    "uptime": "Uptime",
+    "speed": "Shpejtësi Lighthouse",
+    "support": "Support për klientë"
+  },
+
+  "services": {
+    "title": "Çfarë Ne Ofrojmë",
+    "subtitle": "Nga ideja deri në publikim — një ekip i vetëm, një rezultat i shkëlqyer.",
+    "s1": "Zhvillim Custom Softueri",
+    "s1d": "Zgjidhje softuerike të personalizuara për nevojat tuaja.",
+    "s2": "Aplikacione Web-i",
+    "s2d": "Aplikacione moderne, të shpejta dhe responsive.",
+    "s3": "Aplikacione Mobile",
+    "s3d": "Aplikacione native dhe hibride me UX të shkëlqyer."
+  },
+
+  "about": {
+    "title": "Misioni Ynë",
+    "text": "Te Solvey Labs fuqizojmë bizneset me teknologji inovative. Softueri i duhur transformon operacionet, rrit efikasitetin dhe hap mundësi të reja."
+  },
+
+  "careers": {
+    "title": "Bashkohu me Ekipin Tonë",
+    "text": "Në kërkim të talenteve të reja. Nëse do të ndërtosh gjëra të mëdha, apliko tani.",
+    "name": "Emri i plotë",
+    "email": "Email",
+    "cv": "Ngarko CV (PDF)",
+    "msg": "Mesazh i shkurtër (opsional)",
+    "submit": "Dërgo Aplikimin",
+    "ok": "Faleminderit! Aplikimi u dërgua.",
+    "teaserTitle": "Bashkohu me ekipin tonë",
+    "teaserText": "Nëse je i apasionuar pas teknologjisë dhe do të rritesh shpejt, shiko pozitat tona të hapura.",
+    "viewOpenings": "Shiko pozitat"
+  },
+
+  "contact": {
+    "title": "Na Kontaktoni",
+    "text": "Ide? Pyetje? Apo thjesht përshëndetje? Jemi këtu për ju.",
+    "yourName": "Emri Juaj",
+    "yourEmail": "Email Juaj",
+    "subject": "Subjekti",
+    "message": "Mesazhi Juaj",
+    "send": "Dërgo Mesazhin",
+    "ok": "Mesazhi u dërgua. Do t’ju kontaktojmë së shpejti."
+  },
+
+  "cta": {
+    "title": "Gati të ndërtojmë diçka të jashtëzakonshme?",
+    "text": "Ne bashkojmë strategji, dizajn dhe inxhinieri për të sjellë produkte që rritin biznesin tuaj.",
+    "quote": "Kërko ofertë",
+    "blog": "Lexo blogun"
+  },
+
+  "footer": {
+    "rights": "Të gjitha të drejtat e rezervuara.",
+    "madeIn": "Dizajnuar me pasion në Prishtinë."
+  },
+
+  "blog": { "title": "Blog", "empty": "Nuk ka ende postime." },
+
+  "admin": {
+    "loginTitle": "Hyrje Admin",
+    "invalid": "Kredencialet e pasakta",
+    "title": "Admin — Solvey Labs",
+    "posts": "Postime",
+    "applications": "Aplikime",
+    "contacts": "Kontakte",
+    "createPost": "Krijo Postim",
+    "titleLabel": "Titulli",
+    "slug": "Slug",
+    "cover": "URL e kopertinës (ops.)",
+    "content": "Përmbajtja",
+    "published": "Publikuar",
+    "save": "Ruaj",
+    "delete": "Fshi",
+    "status": "Statusi",
+    "approve": "Aprovo",
+    "cv": "CV"
+  },
+
+  "common": { "loading": "Duke u ngarkuar…" }
+}
