@@ -13,7 +13,9 @@ export default function Navbar(){
 
 
   const navClass = ({ isActive }) =>
-    `hover:underline ${isActive ? 'text-lightest-slate font-semibold' : ''}`
+  `transition-colors hover:text-[var(--color-accent)] ${
+    isActive ? 'text-lightest-slate font-semibold' : ''
+  }`;
 
   return (
     <header className="sticky top-0 z-50 bg-dark-navy/80 backdrop-blur-sm shadow-lg shadow-black/20">
@@ -39,7 +41,7 @@ export default function Navbar(){
 
         {/* Mobile */}
         <button
-          className="md:hidden text-lightest-slate"
+          className="md:hidden text-lightest-slate cursor-pointer"
           aria-label="Menu"
           aria-expanded={open}
           aria-controls="mobile-menu"
@@ -61,8 +63,8 @@ export default function Navbar(){
           <NavLink to="/careers" className={navClass} onClick={()=>setOpen(false)}>{t('nav.careers')}</NavLink>
           <NavLink to="/contact" className={navClass} onClick={()=>setOpen(false)}>{t('nav.contact')}</NavLink>
 
-          <div className="pt-1 flex flex-row-reverse">
-            <LanguageFlag className="h-5 w-8 shadow" />
+          <div className="pt-1 flex items-center gap-2">
+            <LanguageFlag className="h-5 w-8 shadow order-2" />
             <LanguageSwitcher />
           </div>
         </div>
