@@ -9,9 +9,6 @@ import Home from './pages/Home.jsx';
 import Blog from './pages/Blog.jsx';
 import Careers from './pages/Careers.jsx';
 import Contact from './pages/Contact.jsx';
-import AdminLogin from './pages/admin/AdminLogin.jsx';
-import AdminDashboard from './pages/admin/AdminDashboard.jsx';
-import AdminGuard from './components/AdminGuard.jsx';
 
 const router = createBrowserRouter([
   { path: '/', element: <App />, children: [
@@ -19,8 +16,6 @@ const router = createBrowserRouter([
     { path: 'blog', element: <Blog /> },
     { path: 'careers', element: <Careers /> },
     { path: 'contact', element: <Contact /> },
-    { path: 'admin/login', element: <AdminLogin /> },
-    { path: 'admin', element: <AdminGuard><AdminDashboard /></AdminGuard>},
   ]}
 ])
 

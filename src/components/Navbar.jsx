@@ -1,21 +1,16 @@
-import { useState } from 'react'
-import { Link, NavLink, useNavigate } from 'react-router-dom'
-import { useTranslation } from 'react-i18next'
-import LanguageSwitcher from './LanguageSwitcher'
+import { useState } from 'react';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import LanguageSwitcher from './LanguageSwitcher';
+import LanguageFlag from './LanguageFlag';
 
 const showAdminLogin = import.meta.env.VITE_SHOW_ADMIN_LOGIN === 'true'
 
 export default function Navbar(){
   const [open, setOpen] = useState(false)
   const navigate = useNavigate()
-  const token = localStorage.getItem('sl_token')
   const { t } = useTranslation('common');
 
-  const logout = () => {
-    localStorage.removeItem('sl_token')
-    navigate('/')
-    setOpen(false)
-  }
 
   const navClass = ({ isActive }) =>
     `hover:underline ${isActive ? 'text-lightest-slate font-semibold' : ''}`
@@ -25,7 +20,7 @@ export default function Navbar(){
       <nav className="container-page py-8 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2" onClick={()=>setOpen(false)}>
           <div className="h-9 w-9 rounded-xl bg-accent text-dark-navy grid place-items-center font-bold">S</div>
-          <span className="text-lg font-semibold text-lightest-slate">{t('brand')}</span>
+          <span className="text-3xl font-semibold text-lightest-slate">{t('brand')}</span>
         </Link>
 
         {/* Desktop */}
@@ -33,18 +28,13 @@ export default function Navbar(){
           <NavLink to="/" className={navClass} end>{t('nav.home')}</NavLink>
           <NavLink to="/blog" className={navClass}>{t('nav.blog')}</NavLink>
           <NavLink to="/careers" className={navClass}>{t('nav.careers')}</NavLink>
-          <NavLink to="/contact" className={navClass}>{t('nav.contact')}</NavLink>
+          <NavLink to="/contact" className={navClass}>{t('nav.contact')}</NavLink> 
 
-          {token ? (
-            <>
-              <NavLink to="/admin" className={navClass}>{t('nav.admin')}</NavLink>
-              <button onClick={logout} className="btn-ghost">{t('nav.logout')}</button>
-            </>
-          ) : (
-            showAdminLogin && <NavLink to="/admin/login" className="btn-primary p-2">{t('nav.login')}</NavLink>
-          )}
-
-          <LanguageSwitcher />
+          <div className='flex items-center gap-2.5'>
+            <LanguageFlag className="h-5 w-7 shadow ml-4" />
+            <LanguageSwitcher class="ml-0" />
+          </div>
+          
         </div>
 
         {/* Mobile */}
@@ -71,16 +61,8 @@ export default function Navbar(){
           <NavLink to="/careers" className={navClass} onClick={()=>setOpen(false)}>{t('nav.careers')}</NavLink>
           <NavLink to="/contact" className={navClass} onClick={()=>setOpen(false)}>{t('nav.contact')}</NavLink>
 
-          {token ? (
-            <>
-              <NavLink to="/admin" className={navClass} onClick={()=>setOpen(false)}>{t('nav.admin')}</NavLink>
-              <button onClick={logout} className="btn-ghost">{t('nav.logout')}</button>
-            </>
-          ) : (
-            showAdminLogin && <NavLink to="/admin/login" className="btn-primary" onClick={()=>setOpen(false)}>{t('nav.login')}</NavLink>
-          )}
-
-          <div className="pt-1">
+          <div className="pt-1 flex flex-row-reverse">
+            <LanguageFlag className="h-5 w-8 shadow" />
             <LanguageSwitcher />
           </div>
         </div>
