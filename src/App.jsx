@@ -4,9 +4,9 @@ import Footer from './components/Footer'
 
 export default function App(){
   return (
-    <div className="app-skin">
+    <div className="app-skin container mx-auto lg:px-16">
       <Navbar />
-      <main className="container-page py-6">
+      <main className=" py-6">
         <Outlet />
       </main>
       <Footer />

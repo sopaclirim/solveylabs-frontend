@@ -21,7 +21,6 @@ export default function Footer() {
         { label: "PayPal",           icon: "logos:paypal" },
         { label: "Stripe",           icon: "logos:stripe" },
         { label: "Apple Pay",        icon: "logos:apple-pay" },
-        { label: "Google Pay",       icon: "logos:google-pay" },
     ];
 
     return (
