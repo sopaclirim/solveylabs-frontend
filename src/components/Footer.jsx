@@ -1,14 +1,129 @@
+// Footer.tsx
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
+import { Icon } from "@iconify/react";
 
-export default function Footer(){
-    const { t } = useTranslation('common');
+export default function Footer() {
+    const { t } = useTranslation("common");
+    const year = new Date().getFullYear();
+
+    const socials = [
+        { href: "https://instagram.com/solveylabs", label: "Instagram", icon: "logos:instagram-icon" },
+        { href: "https://facebook.com/solveylabs",  label: "Facebook",  icon: "logos:facebook" },
+        { href: "https://linkedin.com/company/solveylabs", label: "LinkedIn", icon: "logos:linkedin-icon" },
+        { href: "https://github.com/solveylabs",    label: "GitHub",    icon: "logos:github-icon" },
+    ];
+
+    const payments = [
+        { label: "Visa",             icon: "logos:visa" },
+        { label: "Mastercard",       icon: "logos:mastercard" },
+
+        { label: "PayPal",           icon: "logos:paypal" },
+        { label: "Stripe",           icon: "logos:stripe" },
+        { label: "Apple Pay",        icon: "logos:apple-pay" },
+        { label: "Google Pay",       icon: "logos:google-pay" },
+    ];
 
     return (
-        <footer className="border-t border-lightest-navy/20">
-        <div className="container-page py-8 text-center text-slate">
-            <p>
-            &copy; {new Date().getFullYear()} {t('brand')}. {t('footer.rights')}
-            </p>
+        <footer className="mt-16 border-t border-lightest-navy/20 bg-footer-gradient">
+        <div className="container-page py-10">
+            {/* grid 4 kolona në desktop, 1 në mobile */}
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-lightest-slate">
+            {/* About / Address */}
+            <div>
+                <h3 className="text-lg font-semibold mb-3">{t("brand")}</h3>
+                <p className="text-slate mb-4">{t("footer.tagline")}</p>
+
+                <address className="not-italic text-sm leading-6 text-light-slate">
+                <div className="font-medium text-lightest-slate">{t("footer.office")}</div>
+                <div>Rr. Shembull 123, 10000 Prishtinë</div>
+                <div>Kosovë</div>
+                <div className="mt-2">
+                    <a className="hover:underline" href="mailto:hello@solveylabs.com">hello@solveylabs.com</a>{" · "}
+                    <a className="hover:underline" href="tel:+38344123456">+383 44 123 456</a>
+                </div>
+                </address>
+            </div>
+
+            {/* Services */}
+            <div>
+                <h3 className="text-lg font-semibold mb-3">{t("footer.services")}</h3>
+                <ul className="space-y-2 text-slate">
+                <li><Link to="/#sherbimet" className="hover:text-accent">{t("footer.s_custom")}</Link></li>
+                <li><Link to="/#sherbimet" className="hover:text-accent">{t("footer.s_web")}</Link></li>
+                <li><Link to="/#sherbimet" className="hover:text-accent">{t("footer.s_mobile")}</Link></li>
+                <li><Link to="/#sherbimet" className="hover:text-accent">{t("footer.s_cloud")}</Link></li>
+                </ul>
+            </div>
+
+            {/* Links & Social */}
+            <div>
+                <h3 className="text-lg font-semibold mb-3">{t("footer.links")}</h3>
+                <ul className="space-y-2 text-slate mb-4">
+                <li><Link to="/blog" className="hover:text-accent">{t("nav.blog")}</Link></li>
+                <li><Link to="/careers" className="hover:text-accent">{t("nav.careers")}</Link></li>
+                <li><Link to="/contact" className="hover:text-accent">{t("nav.contact")}</Link></li>
+                <li><a href="/legal/privacy" className="hover:text-accent">{t("footer.privacy")}</a></li>
+                <li><a href="/legal/terms" className="hover:text-accent">{t("footer.terms")}</a></li>
+                </ul>
+
+                <div className="flex items-center gap-3">
+                {socials.map(s => (
+                    <a
+                    key={s.label}
+                    href={s.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={s.label}
+                    title={s.label}
+                    className="group inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white hover:bg-white/95 transition"
+                    >
+                    <Icon icon={s.icon} width={20} height={20} />
+                    </a>
+                ))}
+                </div>
+            </div>
+
+            {/* Payments & Location */}
+            <div>
+                <h3 className="text-lg font-semibold mb-3">{t("footer.payments")}</h3>
+                <p className="text-slate text-sm mb-3">{t("footer.weAccept")}</p>
+                <div className="flex flex-wrap items-center gap-3 mb-6">
+                {payments.map(p => (
+                    <span
+                    key={p.label}
+                    title={p.label}
+                    aria-label={p.label}
+                    className="inline-flex h-9 min-w-9 items-center justify-center rounded-md border border-white/10 bg-white px-2"
+                    >
+                    <Icon icon={p.icon} width={24} height={24} />
+                    </span>
+                ))}
+                </div>
+
+                <h3 className="text-lg font-semibold mb-3">{t("footer.findUs")}</h3>
+                <div className="overflow-hidden rounded-xl border border-white/10 bg-white/5">
+                <div className="overflow-hidden rounded-xl border border-white/10 bg-white/5">
+                <div className="aspect-video">
+                    <iframe
+                    title="Solvey Labs Office"
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    className="h-full w-full"
+                    src="https://www.google.com/maps?q=42.521924,21.119644&z=16&output=embed"
+                    />
+                </div>
+            </div>
+
+                </div>
+            </div>
+            </div>
+
+            {/* Bottom bar */}
+            <div className="mt-8 flex flex-col md:flex-row items-center justify-between gap-3 text-slate text-sm">
+                <p>&copy; {year} {t("brand")}. {t("footer.rights")}</p>
+                <p className="opacity-80">{t("footer.madeIn")}</p>
+            </div>
         </div>
         </footer>
     );

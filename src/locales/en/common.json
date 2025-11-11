@@ -79,31 +79,24 @@
     "blog": "Read the blog"
   },
 
-  "footer": {
-    "rights": "All rights reserved.",
-    "madeIn": "Designed with passion in Prishtina."
-  },
-
   "blog": { "title": "Blog", "empty": "No posts yet." },
 
-  "admin": {
-    "loginTitle": "Admin Login",
-    "invalid": "Invalid credentials",
-    "title": "Admin — Solvey Labs",
-    "posts": "Posts",
-    "applications": "Applications",
-    "contacts": "Contacts",
-    "createPost": "Create Post",
-    "titleLabel": "Title",
-    "slug": "Slug",
-    "cover": "Cover URL (optional)",
-    "content": "Content",
-    "published": "Published",
-    "save": "Save",
-    "delete": "Delete",
-    "status": "Status",
-    "approve": "Approve",
-    "cv": "CV"
+  "footer": {
+    "tagline": "We craft modern websites & apps focused on performance, security and minimalist design.",
+    "office": "Office",
+    "services": "Services",
+    "s_custom": "Custom Software Development",
+    "s_web": "Web Applications",
+    "s_mobile": "Mobile Applications",
+    "s_cloud": "Cloud & DevOps",
+    "links": "Links",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use",
+    "rights": "All rights reserved.",
+    "madeIn": "Designed with passion in Prishtina.",
+    "payments": "Payments",
+    "weAccept": "",
+    "findUs": ""
   },
 
   "common": { "loading": "Loading…" }

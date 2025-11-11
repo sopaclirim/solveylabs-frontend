@@ -80,31 +80,22 @@
     "blog": "Lexo blogun"
   },
 
-  "footer": {
-    "rights": "Të gjitha të drejtat e rezervuara.",
-    "madeIn": "Dizajnuar me pasion në Prishtinë."
-  },
 
   "blog": { "title": "Blog", "empty": "Nuk ka ende postime." },
 
-  "admin": {
-    "loginTitle": "Hyrje Admin",
-    "invalid": "Kredencialet e pasakta",
-    "title": "Admin — Solvey Labs",
-    "posts": "Postime",
-    "applications": "Aplikime",
-    "contacts": "Kontakte",
-    "createPost": "Krijo Postim",
-    "titleLabel": "Titulli",
-    "slug": "Slug",
-    "cover": "URL e kopertinës (ops.)",
-    "content": "Përmbajtja",
-    "published": "Publikuar",
-    "save": "Ruaj",
-    "delete": "Fshi",
-    "status": "Statusi",
-    "approve": "Aprovo",
-    "cv": "CV"
+  "footer": {
+    "tagline": "Ndërtojmë faqe & aplikacione moderne me fokus në performancë, siguri dhe dizajn minimalist.",
+    "office": "Zyra",
+    "services": "Shërbime",
+    "s_custom": "Zhvillim softueri me porosi",
+    "s_web": "Aplikacione Web",
+    "s_mobile": "Aplikacione Mobile",
+    "s_cloud": "Cloud & DevOps",
+    "links": "Lidhje",
+    "privacy": "Privatësia",
+    "terms": "Kushtet e përdorimit",
+    "rights": "Të gjitha të drejtat e rezervuara.",
+    "madeIn": "Dizajnuar me pasion në Prishtinë."
   },
 
   "common": { "loading": "Duke u ngarkuar…" }

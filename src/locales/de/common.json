@@ -80,31 +80,21 @@
     "blog": "Blog lesen"
   },
 
-  "footer": {
-    "rights": "Alle Rechte vorbehalten.",
-    "madeIn": "Mit Leidenschaft in Pristina gestaltet."
-  },
-
   "blog": { "title": "Blog", "empty": "Noch keine Beiträge." },
 
-  "admin": {
-    "loginTitle": "Admin-Login",
-    "invalid": "Ungültige Anmeldedaten",
-    "title": "Admin — Solvey Labs",
-    "posts": "Beiträge",
-    "applications": "Bewerbungen",
-    "contacts": "Kontakte",
-    "createPost": "Beitrag erstellen",
-    "titleLabel": "Titel",
-    "slug": "Slug",
-    "cover": "Cover-URL (optional)",
-    "content": "Inhalt",
-    "published": "Veröffentlicht",
-    "save": "Speichern",
-    "delete": "Löschen",
-    "status": "Status",
-    "approve": "Freigeben",
-    "cv": "Lebenslauf"
+  "footer": {
+    "tagline": "Wir entwickeln moderne Websites & Apps mit Fokus auf Performance, Sicherheit und minimalistisches Design.",
+    "office": "Büro",
+    "services": "Leistungen",
+    "s_custom": "Individuelle Softwareentwicklung",
+    "s_web": "Web-Applikationen",
+    "s_mobile": "Mobile Applikationen",
+    "s_cloud": "Cloud & DevOps",
+    "links": "Links",
+    "privacy": "Datenschutz",
+    "terms": "Nutzungsbedingungen",
+    "rights": "Alle Rechte vorbehalten.",
+    "madeIn": "Mit Leidenschaft in Pristina entworfen."
   },
 
   "common": { "loading": "Lädt…" }
