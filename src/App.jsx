@@ -6,7 +6,7 @@ export default function App(){
   return (
     <div className="app-skin">
       <Navbar />
-      <main className="container-page py-8">
+      <main className="container-page py-6">
         <Outlet />
       </main>
       <Footer />

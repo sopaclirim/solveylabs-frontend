@@ -37,6 +37,12 @@
     "s3d": "Aplikacione native dhe hibride me UX të shkëlqyer."
   },
 
+  "technologies": {
+    "title": "Mjetet & Teknologjitë",
+    "subtitle": "Moderne, të sigurta dhe të shkallëzueshme që në thelb—të inxhinieruara për të dërguar shpejt dhe për t’u zhvilluar në mënyrë të sigurt."
+  },
+
+
   "about": {
     "title": "Misioni Ynë",
     "text": "Te Solvey Labs fuqizojmë bizneset me teknologji inovative. Softueri i duhur transformon operacionet, rrit efikasitetin dhe hap mundësi të reja."

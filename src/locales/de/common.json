@@ -37,6 +37,12 @@
     "s3d": "Native und hybride Apps mit hervorragender UX."
   },
 
+  "technologies": {
+    "title": "Tools & Technologien",
+    "subtitle": "Modern, sicher und skalierbar von Haus aus—entwickelt, um schnell zu liefern und sich sicher weiterzuentwickeln."
+  },
+
+
   "about": {
     "title": "Unsere Mission",
     "text": "Bei Solvey Labs befähigen wir Unternehmen mit innovativer Technologie. Die richtige Software transformiert Abläufe, steigert Effizienz und schafft neue Chancen."

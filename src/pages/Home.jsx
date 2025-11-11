@@ -4,17 +4,20 @@ import FeatureCard from '../components/FeatureCard'
 import StatBadge from '../components/StatBadge'
 import LogoCloud from '../components/LogoCloud'
 import CTA from '../components/CTA'
+import TechMarquee from '../components/TechMarquee'
 
 function IconCode(props){ return (
   <svg {...props} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
     <path strokeLinecap="round" strokeLinejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
   </svg>
 )}
+
 function IconWeb(props){ return (
   <svg {...props} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
     <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
   </svg>
 )}
+
 function IconMobile(props){ return (
   <svg {...props} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
     <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
@@ -46,7 +49,13 @@ export default function Home(){
             <StatBadge value="~30%+" label={t('stats.speed')} />
             <StatBadge value="24/7" label={t('stats.support')} />
           </div>
+
+          
+          
+          
         </div>
+        
+        
       </section>
 
       {/* LOGO CLOUD */}
@@ -76,6 +85,8 @@ export default function Home(){
         </div>
       </section>
 
+      
+
       {/* RRETH NESH */}
       <section id="rreth-nesh" className="py-20 md:py-28 section-gradient rounded-2xl border border-lightest-navy/20">
         <SectionHeading
@@ -94,6 +105,17 @@ export default function Home(){
           <a href="/careers" className="btn-primary p-2">{t('careers.viewOpenings')}</a>
         </div>
       </section>
+
+      {/* Tools & Technologies */}
+      <div className='container-page py-20'>
+          <SectionHeading
+                kicker={t('technologies.title')}
+                title={t('technologies.title')}
+                subtitle={t('technologies.subtitle')}
+          />
+              
+          <TechMarquee />
+      </div>
 
       {/* KONTAKT – CTA */}
       <section id="kontakt" className="py-16 md:py-24">
