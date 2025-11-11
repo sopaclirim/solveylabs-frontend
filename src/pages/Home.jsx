@@ -46,7 +46,7 @@ export default function Home(){
           <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-3">
             <StatBadge value="15+"  label={t('stats.projects')} />
             <StatBadge value="99.9%" label={t('stats.uptime')} />
-            <StatBadge value="~30%+" label={t('stats.speed')} />
+            <StatBadge className="text-center" value="~30%+" label={t('stats.speed')} />
             <StatBadge value="24/7" label={t('stats.support')} />
           </div>
 
