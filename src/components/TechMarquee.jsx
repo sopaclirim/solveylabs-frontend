@@ -51,7 +51,7 @@ export default function TechMarquee() {
     return (
         <section className="pt-10 pb-0 md:py-14">
             {/* edge-to-edge pa scroll horizontal */}
-            <div className="px-36 pb-9 relative w-screen left-1/2 right-1/2 -mx-[50vw] overflow-hidden">
+            <div className="lg:px-36 pb-9 relative w-screen left-1/2 right-1/2 -mx-[50vw] overflow-hidden">
                 <div className="[mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
                 <div className="group relative h-[10rem] sm:h-[11rem] md:h-[12.5rem]">
                     <div

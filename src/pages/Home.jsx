@@ -88,7 +88,7 @@ export default function Home(){
       
 
       {/* RRETH NESH */}
-      <section id="rreth-nesh" className="py-20 md:py-28 section-gradient rounded-2xl border border-lightest-navy/20">
+      <section id="rreth-nesh" className="py-20 md:py-28 px-6 section-gradient rounded-2xl border border-lightest-navy/20">
         <SectionHeading
           title={t('about.title')}
           subtitle={t('about.text')}
@@ -102,12 +102,12 @@ export default function Home(){
           subtitle={t('careers.teaserText')}
         />
         <div className="mt-8 text-center">
-          <a href="/careers" className="btn-primary p-2">{t('careers.viewOpenings')}</a>
+          <a href="/careers" className="btn-primary p-3 text-white">{t('careers.viewOpenings')}</a>
         </div>
       </section>
 
       {/* Tools & Technologies */}
-      <div className='container-page py-20'>
+      <div className='container-page pt-20 pb-0'>
           <SectionHeading
                 kicker={t('technologies.title')}
                 title={t('technologies.title')}
@@ -118,7 +118,7 @@ export default function Home(){
       </div>
 
       {/* KONTAKT – CTA */}
-      <section id="kontakt" className="py-16 md:py-24">
+      <section id="kontakt" className="mt-24 md:mt-12">
         <CTA />
       </section>
     </div>
