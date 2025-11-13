@@ -24,7 +24,7 @@ export default function Footer() {
     ];
 
     return (
-        <footer className="pt-16 border-t border-lightest-navy/20 bg-dark-navy">
+        <footer className="pt-16 border-t bg-dark-navy border-dark-navy shadow-[0_-2px_5px_rgba(4,13,18)]">
         <div className="py-10 px-10 lg:px-16 xl:px-36">
             {/* grid 4 kolona në desktop, 1 në mobile */}
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-lightest-slate">

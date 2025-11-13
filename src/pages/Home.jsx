@@ -96,7 +96,7 @@ export default function Home(){
       </section>
 
       {/* KARRIERA (teaser) */}
-      <section id="karriera" className="py-20 md:py-28 bg-dark-navy border-b border-dark-navy shadow-[0_16px_18px_rgba(4,13,18)]">
+      <section id="karriera" className="py-20 px-10 md:py-28 bg-dark-navy border-b border-dark-navy shadow-[0_16px_18px_rgba(4,13,18)]">
         <SectionHeading
           title={t('careers.teaserTitle')}
           subtitle={t('careers.teaserText')}
