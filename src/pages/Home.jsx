@@ -37,13 +37,13 @@ export default function Home(){
           <h2 className="text-3xl md:text-5xl font-bold text-slate mb-6">{t('hero.subtitle')}</h2>
           <p className="max-w-2xl mx-auto text-lg text-light-slate">{t('hero.tagline')}</p>
 
-          <div className="mt-8 flex items-center justify-center gap-3 px-6">
+          <div className="mt-8 flex items-center justify-center gap-3 px-4">
             <a href="/contact" className="btn-ghost text-base p-3">{t('hero.cta')}</a>
             <a href="#sherbimet" className="btn-primary text-base p-3 px-7 border-2 border-accent">{t('services.title')}</a>
           </div>
 
           {/* Stats */}
-          <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-3 px-6">
+          <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-3 px-4">
             <StatBadge value="15+"  label={t('stats.projects')} />
             <StatBadge value="99.9%" label={t('stats.uptime')} />
             <StatBadge value="~30%+" label={t('stats.speed')} />
@@ -62,7 +62,7 @@ export default function Home(){
           title={t('services.title')}
           subtitle={t('services.subtitle')}
         />
-        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6">
+        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
           <FeatureCard icon={IconCode} title={t('services.s1')}>
             {t('services.s1d')}
           </FeatureCard>
