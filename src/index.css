@@ -18,7 +18,7 @@
 }
 
 /* ---------- Skin global ---------- */
-.app-skin { @apply bg-dark-navy/90 text-slate min-h-screen; }
+.app-skin { @apply bg-dark-navy/70 text-slate min-h-screen; }
 .container-page { @apply container mx-auto px-6; }
 
 /* ---------- UI helpers ---------- */
@@ -45,7 +45,7 @@
 
 .badge-gradient{
   background:
-    radial-gradient(1200px 600px at 20% 0%, #64ffda22 0%, transparent 30%),
+    radial-gradient(1200px 600px at 20% 0%, #64ffda22 0%, transparent 40%),
     radial-gradient(1000px 600px at 100% 20%, #64ffda15 0%, transparent 35%);
 }
 

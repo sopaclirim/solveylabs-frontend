@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next'
 export default function CTA(){
   const { t } = useTranslation('common')
   return (
-    <section className="section-gradient rounded-2xl border border-lightest-navy/20 p-10 md:p-14 text-center">
+    <section className="section-gradient rounded-2xl border border-lightest-navy/20 px-10 py-26 text-center">
       <h3 className="text-2xl md:text-3xl font-bold text-lightest-slate">
         {t('cta.title')}
       </h3>

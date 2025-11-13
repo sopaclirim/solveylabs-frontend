@@ -35,7 +35,7 @@ const clients = [
 
 export default function LogoCloud() {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-14">
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-14 lg:px-16 xl:px-36">
       {clients.map((c) => (
         <Logo key={c.label} {...c} />
       ))}

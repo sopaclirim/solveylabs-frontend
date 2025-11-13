@@ -28,22 +28,22 @@ export default function Home(){
   const { t } = useTranslation('common')
 
   return (
-    <div className="container-page">
+    <div className="">
       {/* HERO */}
-      <section id="hero" className="min-h-[82vh] flex items-center justify-center text-center pt-16">
-        <div className="max-w-5xl">
+      <section id="hero" className="min-h-[82vh] flex items-center justify-center text-center pt-16 pb-20 mb-16">
+        <div className="max-w-5xl px-10">
           <p className="text-accent text-lg mb-3">{t('hero.hi')}</p>
           <h1 className="text-5xl md:text-7xl font-bold text-lightest-slate mb-3">{t('hero.title')}</h1>
           <h2 className="text-3xl md:text-5xl font-bold text-slate mb-6">{t('hero.subtitle')}</h2>
           <p className="max-w-2xl mx-auto text-lg text-light-slate">{t('hero.tagline')}</p>
 
-          <div className="mt-8 flex items-center justify-center gap-3">
+          <div className="mt-8 flex items-center justify-center gap-3 px-6">
             <a href="/contact" className="btn-ghost text-base p-3">{t('hero.cta')}</a>
             <a href="#sherbimet" className="btn-primary text-base p-3 px-7 border-2 border-accent">{t('services.title')}</a>
           </div>
 
           {/* Stats */}
-          <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-3">
+          <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-3 px-6">
             <StatBadge value="15+"  label={t('stats.projects')} />
             <StatBadge value="99.9%" label={t('stats.uptime')} />
             <StatBadge value="~30%+" label={t('stats.speed')} />
@@ -52,16 +52,17 @@ export default function Home(){
         </div>
       </section>
 
-      <hr className="my-6 border hr-soft" />
+      {/* <hr className="mt-16 border hr-soft mx-14 lg:mx-16 xl:mx-36" /> */}
+
 
       {/* SHËRBIMET */}
-      <section id="sherbimet" className="py-20 md:py-28">
+      <section id="sherbimet" className="px-10 lg:px-16 xl:px-36 py-28 bg-dark-navy border-t border-dark-navy shadow-[0_-16px_28px_rgba(4,13,18)]">
         <SectionHeading
           kicker={t('services.title')}
           title={t('services.title')}
           subtitle={t('services.subtitle')}
         />
-        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6">
           <FeatureCard icon={IconCode} title={t('services.s1')}>
             {t('services.s1d')}
           </FeatureCard>
@@ -75,15 +76,17 @@ export default function Home(){
       </section>
 
       {/* RRETH NESH */}
-      <section id="rreth-nesh" className="py-20 md:py-28 px-6 section-gradient rounded-2xl border border-lightest-navy/20">
-        <SectionHeading
-          title={t('about.title')}
-          subtitle={t('about.text')}
-        />
-      </section>
+      <div className='px-10 lg:px-16 xl:px-36 bg-dark-navy pt-18 pb-18'>
+          <section id="rreth-nesh" className="py-24 px-10 section-gradient rounded-2xl border border-lightest-navy/20">
+            <SectionHeading
+              title={t('about.title')}
+              subtitle={t('about.text')}
+            />
+        </section>
+      </div>
 
       {/* LOGO CLOUD */}
-      <section className="py-10 mt-16 md:py-12">
+      <section className="pt-30 pb-46 px-10 bg-dark-navy">
         <SectionHeading
           title={t('clients.title')}
           subtitle={t('clients.text')}
@@ -92,23 +95,19 @@ export default function Home(){
         <LogoCloud />
       </section>
 
-      <hr className="my-6 border hr-soft" />
-
-      
-
       {/* KARRIERA (teaser) */}
-      <section id="karriera" className="py-20 md:py-28">
+      <section id="karriera" className="py-20 md:py-28 bg-dark-navy border-b border-dark-navy shadow-[0_16px_18px_rgba(4,13,18)]">
         <SectionHeading
           title={t('careers.teaserTitle')}
           subtitle={t('careers.teaserText')}
         />
         <div className="mt-8 text-center">
-          <a href="/careers" className="btn-primary p-3 text-white">{t('careers.viewOpenings')}</a>
+          <a href="/careers" className="btn-primary p-3">{t('careers.viewOpenings')}</a>
         </div>
       </section>
 
       {/* Tools & Technologies */}
-      <div className='container-page pt-20 pb-0'>
+      <div className='container-page pt-36 pb-0'>
           <SectionHeading
                 kicker={t('technologies.title')}
                 title={t('technologies.title')}
@@ -119,7 +118,7 @@ export default function Home(){
       </div>
 
       {/* KONTAKT – CTA */}
-      <section id="kontakt" className="mt-24 md:mt-12">
+      <section id="kontakt" className="mt-24 md:mt-12 px-10 lg:px-16 xl:px-36 pb-16">
         <CTA />
       </section>
     </div>

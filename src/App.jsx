@@ -17,11 +17,11 @@ export default function App(){
         playsInline
       />
 
-      {/* Qe header te kete width 100 */}
+      {/* Qe header te kete width 100% */}
       <Navbar />
 
      {/* Overlay + përmbajtja e app-it */}
-      <div className="app-skin px-4 lg:px-16 xl:px-36 relative z-10">
+      <div className="app-skin relative z-10">
         
         <main className="py-6">
           <Outlet />
