@@ -37,7 +37,7 @@ export default function Home(){
           <h2 className="text-3xl md:text-5xl font-bold text-slate mb-6">{t('hero.subtitle')}</h2>
           <p className="max-w-2xl mx-auto text-lg text-light-slate">{t('hero.tagline')}</p>
 
-          <div className="mt-8 flex items-center justify-center gap-3 px-2">
+          <div className="mt-8 flex items-center justify-center gap-3 px-2 ">
             <a href="/contact" className="btn-ghost text-base p-3">{t('hero.cta')}</a>
             <a href="#sherbimet" className="btn-primary text-base p-3 px-7 border-2 border-accent">{t('services.title')}</a>
           </div>
