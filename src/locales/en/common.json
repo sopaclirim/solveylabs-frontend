@@ -99,5 +99,10 @@
     "findUs": ""
   },
 
-  "common": { "loading": "Loading…" }
+  "common": { "loading": "Loading…" },
+
+  "clients":{
+    "title": "Partners & collaborations",
+    "text": "An ecosystem we build and grow with."
+  }
 }

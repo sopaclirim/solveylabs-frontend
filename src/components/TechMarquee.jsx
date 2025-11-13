@@ -62,12 +62,13 @@ export default function TechMarquee() {
                             will-change-transform
                         "
                     >
-                    <div className="flex items-center">
-                        {items.map((it, i) => <Badge key={`a-${i}`} {...it} i={i} />)}
-                    </div>
-                    <div className="flex items-center">
-                        {items.map((it, i) => <Badge key={`b-${i}`} {...it} i={i} />)}
-                    </div>
+                        <div className="flex items-center">
+                            {items.map((it, i) => <Badge key={`a-${i}`} {...it} i={i} />)}
+                        </div>
+
+                        <div className="flex items-center">
+                            {items.map((it, i) => <Badge key={`b-${i}`} {...it} i={i} />)}
+                        </div>
                     </div>
                 </div>
                 </div>

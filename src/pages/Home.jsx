@@ -1,10 +1,10 @@
-import { useTranslation } from 'react-i18next'
-import SectionHeading from '../components/SectionHeading'
-import FeatureCard from '../components/FeatureCard'
-import StatBadge from '../components/StatBadge'
-import LogoCloud from '../components/LogoCloud'
-import CTA from '../components/CTA'
-import TechMarquee from '../components/TechMarquee'
+import { useTranslation } from 'react-i18next';
+import SectionHeading from '../components/SectionHeading';
+import FeatureCard from '../components/FeatureCard';
+import StatBadge from '../components/StatBadge';
+import LogoCloud from '../components/LogoCloud';
+import CTA from '../components/CTA';
+import TechMarquee from '../components/TechMarquee';
 
 function IconCode(props){ return (
   <svg {...props} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
@@ -49,18 +49,7 @@ export default function Home(){
             <StatBadge value="~30%+" label={t('stats.speed')} />
             <StatBadge value="24/7" label={t('stats.support')} />
           </div>
-
-          
-          
-          
         </div>
-        
-        
-      </section>
-
-      {/* LOGO CLOUD */}
-      <section className="py-10 md:py-12">
-        <LogoCloud />
       </section>
 
       <hr className="my-6 border hr-soft" />
@@ -85,8 +74,6 @@ export default function Home(){
         </div>
       </section>
 
-      
-
       {/* RRETH NESH */}
       <section id="rreth-nesh" className="py-20 md:py-28 px-6 section-gradient rounded-2xl border border-lightest-navy/20">
         <SectionHeading
@@ -94,6 +81,20 @@ export default function Home(){
           subtitle={t('about.text')}
         />
       </section>
+
+      {/* LOGO CLOUD */}
+      <section className="py-10 mt-16 md:py-12">
+        <SectionHeading
+          title={t('clients.title')}
+          subtitle={t('clients.text')}
+        />
+  
+        <LogoCloud />
+      </section>
+
+      <hr className="my-6 border hr-soft" />
+
+      
 
       {/* KARRIERA (teaser) */}
       <section id="karriera" className="py-20 md:py-28">

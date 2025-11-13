@@ -18,8 +18,8 @@ export default function Navbar(){
   }`;
 
   return (
-    <header className="sticky top-0 z-50 bg-dark-navy/80 backdrop-blur-sm shadow-lg shadow-black/20">
-      <nav className="container-page py-8 flex items-center justify-between">
+    <header className="sticky top-0 z-50 bg-dark-navy backdrop-blur-sm shadow-lg shadow-black/20">
+      <nav className="flex items-center justify-between py-8 px-4 lg:px-16 xl:px-36">
         <Link to="/" className="flex items-center gap-2" onClick={()=>setOpen(false)}>
           <div className="h-9 w-9 rounded-xl bg-accent text-dark-navy grid place-items-center font-bold">S</div>
           <span className="text-3xl font-semibold text-lightest-slate">{t('brand')}</span>
