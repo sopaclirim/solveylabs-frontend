@@ -67,7 +67,7 @@ export default function TeamCarousel() {
           {visible.map((m, idx) => (
             <article
               key={m.name + idx}
-              className="section-gradient rounded-2xl border border-lightest-navy/20 flex flex-col items-center text-center h-full px-12 py-12"
+              className="section-gradient border border-lightest-navy/20 flex flex-col items-center text-center h-full px-12 py-12"
             >
               <img
                 src={m.img}
