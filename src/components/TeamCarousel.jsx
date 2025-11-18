@@ -67,12 +67,12 @@ export default function TeamCarousel() {
           {visible.map((m, idx) => (
             <article
               key={m.name + idx}
-              className="section-gradient border border-lightest-navy/20 flex flex-col items-center text-center h-full px-12 py-12"
+              className="section-gradient rounded-1xl border border-lightest-navy/20 flex flex-col items-center text-center h-full px-12 py-12"
             >
               <img
                 src={m.img}
                 alt={m.name}
-                className="w-40 h-40 rounded-full object-cover border-2 border-accent mb-4"
+                className="w-35 h-35 rounded-full object-cover border-2 border-accent mb-4"
               />
               <h3 className="text-lg font-semibold text-lightest-slate">{m.name}</h3>
               <p className="text-sm text-light-slate mt-1">{m.role}</p>
@@ -127,5 +127,3 @@ export default function TeamCarousel() {
     </div>
   );
 }
-
-

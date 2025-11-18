@@ -6,6 +6,7 @@ import LogoCloud from '../components/LogoCloud';
 import CTA from '../components/CTA';
 import TechMarquee from '../components/TechMarquee';
 import TeamCarousel from '../components/TeamCarousel';
+import LatestPosts from '../components/LatestPosts';
 
 function IconCode(props){ return (
   <svg {...props} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
@@ -53,11 +54,28 @@ export default function Home(){
         </div>
       </section>
 
+      {/* Latest Posts */}
+       {/* Latest Posts */}
+       <section id="latest-blogs" className='px-10 lg:px-16 xl:px-36 py-20'>
+        <SectionHeading
+            title="Latest Insights"
+            subtitle="Explore our latest articles, tutorials, and industry insights"
+        />
+        
+        <LatestPosts />
+
+        {/* View All Button */}
+        <div className="mt-12 text-center">
+          <a href="/blog" className="btn-ghost p-4">
+            View All Articles
+          </a>
+        </div>
+      </section>
       {/* <hr className="mt-16 border hr-soft mx-14 lg:mx-16 xl:mx-36" /> */}
 
 
       {/* SHËRBIMET */}
-      <section id="sherbimet" className="relative px-10 lg:px-16 xl:px-36 py-28 border-t border-dark-navy/40">
+      <section id="sherbimet" className="relative px-10 lg:px-16 xl:px-36 py-28 border-t border-lightest-navy/10">
         <SectionHeading
           kicker={t('services.title')}
           title={t('services.title')}
@@ -78,7 +96,7 @@ export default function Home(){
 
       {/* RRETH NESH */}
       <div className='px-10 lg:px-16 xl:px-36 pt-18 pb-18'>
-        <section id="rreth-nesh" className="py-24 px-10 section-gradient rounded-2xl border border-lightest-navy/20">
+        <section id="rreth-nesh" className="py-24 px-10 section-gradient border border-lightest-navy/20">
           <SectionHeading
             title={t('about.title')}
             subtitle={t('about.text')}
@@ -135,7 +153,7 @@ export default function Home(){
       </section>
 
       {/* KARRIERA (teaser) */}
-      <section id="karriera" className="py-20 px-10 md:py-28 border-b border-dark-navy/40">
+      <section id="karriera" className="py-20 px-10 md:py-28 border-b border-lightest-navy/10">
         <SectionHeading
           title={t('careers.teaserTitle')}
           subtitle={t('careers.teaserText')}
@@ -145,7 +163,7 @@ export default function Home(){
         <TeamCarousel />
 
         <div className="mt-22 text-center">
-          <a href="/careers" className="btn-primary p-4">{t('careers.viewOpenings')}</a>
+          <a href="/careers" className="btn-ghost p-4">{t('careers.viewOpenings')}</a>
         </div>
       </section>
 
@@ -161,7 +179,7 @@ export default function Home(){
       </div>
 
       {/* KONTAKT – CTA */}
-      <section id="kontakt" className="mt-24 md:mt-12 px-10 lg:px-16 xl:px-36 pb-16">
+      <section id="kontakt" className="my-24 md:mt-12 px-10 lg:px-16 xl:px-36 pb-16">
         <CTA />
       </section>
     </div>
