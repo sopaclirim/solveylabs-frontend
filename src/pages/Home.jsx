@@ -5,6 +5,7 @@ import StatBadge from '../components/StatBadge';
 import LogoCloud from '../components/LogoCloud';
 import CTA from '../components/CTA';
 import TechMarquee from '../components/TechMarquee';
+import TeamCarousel from '../components/TeamCarousel';
 
 function IconCode(props){ return (
   <svg {...props} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
@@ -56,7 +57,7 @@ export default function Home(){
 
 
       {/* SHËRBIMET */}
-      <section id="sherbimet" className="px-10 lg:px-16 xl:px-36 py-28 bg-dark-navy border-t border-dark-navy shadow-[0_-16px_28px_rgba(4,13,18)]">
+      <section id="sherbimet" className="relative px-10 lg:px-16 xl:px-36 py-28 border-t border-dark-navy/40">
         <SectionHeading
           kicker={t('services.title')}
           title={t('services.title')}
@@ -76,17 +77,55 @@ export default function Home(){
       </section>
 
       {/* RRETH NESH */}
-      <div className='px-10 lg:px-16 xl:px-36 bg-dark-navy pt-18 pb-18'>
-          <section id="rreth-nesh" className="py-24 px-10 section-gradient rounded-2xl border border-lightest-navy/20">
-            <SectionHeading
-              title={t('about.title')}
-              subtitle={t('about.text')}
-            />
+      <div className='px-10 lg:px-16 xl:px-36 pt-18 pb-18'>
+        <section id="rreth-nesh" className="py-24 px-10 section-gradient rounded-2xl border border-lightest-navy/20">
+          <SectionHeading
+            title={t('about.title')}
+            subtitle={t('about.text')}
+          />
         </section>
       </div>
 
+      {/* SI PUNOJME – Process */}
+      <section className="px-10 lg:px-16 xl:px-36 py-20">
+        <SectionHeading
+          title="Si punojmë me klientët"
+          subtitle="Proces i thjeshtë, i qartë dhe i fokusuar në rezultat – nga idea deri te lansimi."
+        />
+        <div className="mt-10 grid grid-cols-1 md:grid-cols-4 gap-6">
+          <div className="section-gradient rounded-2xl border border-lightest-navy/20 px-6 py-8">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent mb-2">01</p>
+            <h3 className="text-lg font-semibold text-lightest-slate mb-2">Discovery</h3>
+            <p className="text-sm text-light-slate">
+              Kuptojmë biznesin, sfidat dhe qëllimet e tua. Definojmë qartë çfarë po ndërtojmë dhe pse.
+            </p>
+          </div>
+          <div className="section-gradient rounded-2xl border border-lightest-navy/20 px-6 py-8">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent mb-2">02</p>
+            <h3 className="text-lg font-semibold text-lightest-slate mb-2">Design & Architecture</h3>
+            <p className="text-sm text-light-slate">
+              Krijojmë UX/UI moderne dhe arkitekturë teknike të sigurt, të gatshme për rritje.
+            </p>
+          </div>
+          <div className="section-gradient rounded-2xl border border-lightest-navy/20 px-6 py-8">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent mb-2">03</p>
+            <h3 className="text-lg font-semibold text-lightest-slate mb-2">Development</h3>
+            <p className="text-sm text-light-slate">
+              Zbatojmë me sprint-e të qarta, komunikim transparent dhe deploy të shpeshtë.
+            </p>
+          </div>
+          <div className="section-gradient rounded-2xl border border-lightest-navy/20 px-6 py-8">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent mb-2">04</p>
+            <h3 className="text-lg font-semibold text-lightest-slate mb-2">Launch & Support</h3>
+            <p className="text-sm text-light-slate">
+              Lansim i sigurt, monitorim dhe mirëmbajtje – që produkti të rritet bashkë me biznesin tënd.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* LOGO CLOUD */}
-      <section className="pt-30 pb-46 px-10 bg-dark-navy">
+      <section className="pt-30 pb-46 px-10">
         <SectionHeading
           title={t('clients.title')}
           subtitle={t('clients.text')}
@@ -96,13 +135,17 @@ export default function Home(){
       </section>
 
       {/* KARRIERA (teaser) */}
-      <section id="karriera" className="py-20 px-10 md:py-28 bg-dark-navy border-b border-dark-navy shadow-[0_16px_18px_rgba(4,13,18)]">
+      <section id="karriera" className="py-20 px-10 md:py-28 border-b border-dark-navy/40">
         <SectionHeading
           title={t('careers.teaserTitle')}
           subtitle={t('careers.teaserText')}
         />
-        <div className="mt-8 text-center">
-          <a href="/careers" className="btn-primary p-3">{t('careers.viewOpenings')}</a>
+
+        {/* Meet our team – carousel */}
+        <TeamCarousel />
+
+        <div className="mt-22 text-center">
+          <a href="/careers" className="btn-primary p-4">{t('careers.viewOpenings')}</a>
         </div>
       </section>
 

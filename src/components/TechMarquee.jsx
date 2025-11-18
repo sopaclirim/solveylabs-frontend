@@ -1,6 +1,6 @@
 import {
     SiDotnet, SiAngular, SiReact, SiTailwindcss, SiBootstrap, SiLaravel,
-    SiNodedotjs, SiExpress, SiMongodb, SiRedis, SiPostgresql, SiDocker,
+    SiNodedotjs, SiMongodb, SiRedis, SiPostgresql, SiDocker,
 } from 'react-icons/si'
 
 export default function TechMarquee() {
@@ -12,7 +12,6 @@ export default function TechMarquee() {
         { label: 'Bootstrap',  Icon: SiBootstrap,   cls: 'text-[#7952B3] bg-[#7952B3]/10 border-[#7952B3]/25', url: 'https://getbootstrap.com/docs/' },
         { label: 'Laravel',    Icon: SiLaravel,     cls: 'text-[#FF2D20] bg-[#FF2D20]/10 border-[#FF2D20]/25', url: 'https://laravel.com/docs' },
         { label: 'Node.js',    Icon: SiNodedotjs,   cls: 'text-[#68A063] bg-[#68A063]/10 border-[#68A063]/25', url: 'https://nodejs.org/en' },
-        { label: 'Express',    Icon: SiExpress,     cls: 'text-white bg-white/5          border-white/15',     url: 'https://expressjs.com/' },
         { label: 'MongoDB',    Icon: SiMongodb,     cls: 'text-[#47A248] bg-[#47A248]/10 border-[#47A248]/25', url: 'https://www.mongodb.com/docs/' },
         { label: 'Redis',      Icon: SiRedis,       cls: 'text-[#D82C20] bg-[#D82C20]/10 border-[#D82C20]/25', url: 'https://redis.io/docs/' },
         { label: 'PostgreSQL', Icon: SiPostgresql,  cls: 'text-[#336791] bg-[#336791]/10 border-[#336791]/25', url: 'https://www.postgresql.org/docs/' },

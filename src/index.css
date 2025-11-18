@@ -3,6 +3,7 @@
 
 /* ---------- Tema e ngjyrave (Tailwind v4 @theme) ---------- */
 @theme {
+  /* Dark theme (default) */
   --color-dark-navy:       #040D12;
   --color-light-navy:      #112240;
   --color-lightest-navy:   #233554;
@@ -10,6 +11,13 @@
   --color-light-slate:     #a8b2d1;
   --color-lightest-slate:  #ccd6f6;
   --color-accent:          #64ffda;
+
+  /* Light theme palette */
+  --color-light-bg:        #f7fbff;
+  --color-light-surface:   #ffffff;
+  --color-light-border:    #d0d7e2;
+  --color-light-text-main: #1f2933;
+  --color-light-text-muted:#5a6b82;
 }
 
 /* ---------- Bazë / Font ---------- */
@@ -18,17 +26,49 @@
 }
 
 /* ---------- Skin global ---------- */
-.app-skin { @apply bg-dark-navy/70 text-slate min-h-screen; }
+.app-skin { @apply min-h-screen transition-colors duration-300; }
+.sl-dark .app-skin { @apply bg-dark-navy/70 text-slate; }
+.sl-light {
+  /* Paleta e light mode sipas ngjyrave që sugjerove */
+  --color-accent: #2C74B3;      /* butona, links, highlights */
+  --color-light-bg: #f8fbff;    /* sfondi bazë pak më i ndritshëm */
+}
+.sl-light .app-skin {
+  background:
+    radial-gradient(1100px 700px at 0% 0%, #2C74B322, transparent 60%),
+    radial-gradient(1000px 600px at 100% 0%, #20529526, transparent 65%),
+    var(--color-light-bg);
+  color: var(--color-light-text-muted);
+}
 .container-page { @apply container mx-auto px-6; }
 
 /* ---------- UI helpers ---------- */
-.section-title { @apply text-3xl md:text-4xl font-bold text-lightest-slate text-center mb-6 md:mb-12; }
+.section-title { @apply text-3xl md:text-4xl font-bold text-center mb-6 md:mb-12; }
+.sl-dark .section-title { @apply text-lightest-slate; }
+.sl-light .section-title { color: var(--color-light-text-main); }
 
-.card { @apply rounded-lg bg-light-navy p-8 shadow-lg shadow-black/20 transition hover:-translate-y-1 hover:shadow-accent/20; }
+.card {
+  @apply rounded-lg p-8 shadow-lg transition hover:-translate-y-1;
+}
+.sl-dark .card {
+  @apply bg-light-navy shadow-black/20 hover:shadow-accent/20;
+}
+.sl-light .card {
+  background-color: var(--color-light-surface);
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.12);
+  border: 1px solid var(--color-light-border);
+}
 
 .input {
-  @apply w-full rounded-md bg-light-navy border border-lightest-navy px-3 py-2
-      text-lightest-slate outline-none focus:ring-2 focus:ring-accent focus:border-accent;
+  @apply w-full rounded-md px-3 py-2 outline-none focus:ring-2 focus:ring-accent focus:border-accent;
+}
+.sl-dark .input {
+  @apply bg-light-navy border border-lightest-navy text-lightest-slate;
+}
+.sl-light .input {
+  background-color: var(--color-light-surface);
+  border: 1px solid var(--color-light-border);
+  color: var(--color-light-text-main);
 }
 
 /* Buttons (kujdes: pa @apply mbi klasa custom si 'btn' brenda të tjerave) */
@@ -36,11 +76,52 @@
 .btn-ghost { @apply border-2 border-accent text-accent hover:bg-accent/10; }
 .btn-primary { @apply bg-accent text-dark-navy hover:bg-accent/80; }
 
+/* Butona të rafinuar për light mode (kombinohen më butë me sfondin e hapur) */
+.sl-light .btn-primary {
+  background-color: var(--color-accent);
+  color: #ffffff;
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.16);
+}
+.sl-light .btn-primary:hover {
+  background-color: #144272;
+}
+.sl-light .btn-ghost {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  background-color: transparent;
+}
+.sl-light .btn-ghost:hover {
+  background-color: rgba(32,82,149,0.08);
+}
+
 /* Hero/sections dekorative */
 .section-gradient {
   background:
-    radial-gradient(1200px 600px at 20% 0%, #64ffda22 0%, transparent 60%),
-    radial-gradient(1000px 600px at 100% 20%, #64ffda15 0%, transparent 55%);
+    radial-gradient(1400px 900px at 20% 0%, #64ffda22 0%, transparent 70%),
+    radial-gradient(1200px 900px at 100% 0%, #64ffda15 0%, transparent 65%);
+}
+
+/* Në light mode, të gjitha kutitë me section-gradient marrin gradient blu dhe tekst të bardhë (paleta jote) */
+.sl-light .section-gradient {
+  background: linear-gradient(140deg, #205295, #2C74B3);
+  border-color: transparent !important;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.18);
+}
+.sl-light .section-gradient .text-accent {
+  color: #ffffff;
+}
+.sl-light .section-gradient h1,
+.sl-light .section-gradient h2,
+.sl-light .section-gradient h3,
+.sl-light .section-gradient h4,
+.sl-light .section-gradient h5,
+.sl-light .section-gradient h6 {
+  color: #ffffff !important;
+}
+.sl-light .section-gradient p,
+.sl-light .section-gradient .text-light-slate,
+.sl-light .section-gradient .text-slate {
+  color: rgba(239, 246, 255, 0.92) !important;
 }
 
 .badge-gradient{
@@ -68,12 +149,28 @@
 
 
 /* (Opsionale, por e sigurt kundër scroll horizontal global) */
-html, body { overflow-x: hidden; }
+html, body {
+  overflow-x: hidden;
+  background-color: var(--color-dark-navy);
+}
+
+.sl-light body {
+  background-color: var(--color-light-bg);
+}
 
 /* Marquee djathtas -> majtas, me 2 kopje brenda një track 200% */
 @keyframes sl-marquee {
   from { transform: translateX(0); }
   to   { transform: translateX(-50%); }
+}
+
+/* Slide + fade për carousel (members) */
+@keyframes sl-slide-fade {
+  from { opacity: 0; transform: translateX(12px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+.sl-slide-fade {
+  animation: sl-slide-fade .28s ease-out;
 }
 
 /* Ndero preferencën për minimizim animacionesh */
@@ -111,5 +208,11 @@ html, body { overflow-x: hidden; }
   .sl-bob-up, .sl-bob-down { animation: none !important; }
 }
 
-/* Parandalim scroll horizontal global */
-html, body { overflow-x: hidden; }
+/* ---------- Light mode overrides për tekstet ekzistuese ---------- */
+.sl-light .text-lightest-slate {
+  color: var(--color-light-text-main) !important;
+}
+.sl-light .text-light-slate,
+.sl-light .text-slate {
+  color: var(--color-light-text-muted) !important;
+}
