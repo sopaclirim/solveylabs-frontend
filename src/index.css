@@ -130,6 +130,16 @@
     radial-gradient(1000px 600px at 100% 20%, #64ffda15 0%, transparent 35%);
 }
 
+/* Në light mode, badge-gradient përdor background të bardhë */
+.sl-light .badge-gradient {
+  background: #ffffff;
+}
+
+/* Hover effect - background-i bëhet kaltër (blu) */
+.sl-light .logo-hover:hover {
+  background: linear-gradient(140deg, #205295, #2C74B3);
+}
+
 
 .accent-underline { position: relative; }
 .accent-underline::after {

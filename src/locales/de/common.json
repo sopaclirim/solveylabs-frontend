@@ -97,5 +97,48 @@
     "madeIn": "Mit Leidenschaft in Pristina entworfen."
   },
 
-  "common": { "loading": "Lädt…" }
+  "common": { "loading": "Lädt…" },
+
+  "clients":{
+    "title": "Partner & Kooperationen",
+    "text": "Ein Ökosystem, das wir gemeinsam aufbauen und wachsen lassen."
+  },
+
+  "latestPosts": {
+    "title": "Neueste Einblicke",
+    "subtitle": "Entdecken Sie unsere neuesten Artikel, Tutorials und Brancheneinblicke",
+    "viewAll": "Alle Artikel anzeigen",
+    "readMore": "Mehr lesen"
+  },
+
+  "process": {
+    "title": "Wie wir mit Kunden arbeiten",
+    "subtitle": "Einfacher, klarer und ergebnisorientierter Prozess — von der Idee bis zum Launch.",
+    "step1": {
+      "number": "01",
+      "title": "Discovery",
+      "text": "Wir verstehen Ihr Geschäft, Ihre Herausforderungen und Ziele. Wir definieren klar, was wir bauen und warum."
+    },
+    "step2": {
+      "number": "02",
+      "title": "Design & Architektur",
+      "text": "Wir erstellen modernes UX/UI und sichere technische Architektur, bereit für Wachstum."
+    },
+    "step3": {
+      "number": "03",
+      "title": "Entwicklung",
+      "text": "Wir implementieren mit klaren Sprints, transparenter Kommunikation und häufigen Deployments."
+    },
+    "step4": {
+      "number": "04",
+      "title": "Launch & Support",
+      "text": "Sicherer Launch, Überwachung und Wartung — damit das Produkt mit Ihrem Geschäft wächst."
+    }
+  },
+
+  "techNews": {
+    "title": "Technologie-Nachrichten aus aller Welt",
+    "subtitle": "Bleiben Sie auf dem Laufenden mit den neuesten Technologienachrichten und Innovationen",
+    "category": "Technologie-Nachrichten"
+  }
 }

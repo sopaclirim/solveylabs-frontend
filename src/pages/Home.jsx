@@ -7,6 +7,7 @@ import CTA from '../components/CTA';
 import TechMarquee from '../components/TechMarquee';
 import TeamCarousel from '../components/TeamCarousel';
 import LatestPosts from '../components/LatestPosts';
+import TechNewsCarousel from '../components/TechNewsCarousel';
 
 function IconCode(props){ return (
   <svg {...props} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
@@ -54,26 +55,6 @@ export default function Home(){
         </div>
       </section>
 
-      {/* Latest Posts */}
-       {/* Latest Posts */}
-       <section id="latest-blogs" className='px-10 lg:px-16 xl:px-36 py-20'>
-        <SectionHeading
-            title="Latest Insights"
-            subtitle="Explore our latest articles, tutorials, and industry insights"
-        />
-        
-        <LatestPosts />
-
-        {/* View All Button */}
-        <div className="mt-12 text-center">
-          <a href="/blog" className="btn-ghost p-4">
-            View All Articles
-          </a>
-        </div>
-      </section>
-      {/* <hr className="mt-16 border hr-soft mx-14 lg:mx-16 xl:mx-36" /> */}
-
-
       {/* SHËRBIMET */}
       <section id="sherbimet" className="relative px-10 lg:px-16 xl:px-36 py-28 border-t border-lightest-navy/10">
         <SectionHeading
@@ -107,40 +88,51 @@ export default function Home(){
       {/* SI PUNOJME – Process */}
       <section className="px-10 lg:px-16 xl:px-36 py-20">
         <SectionHeading
-          title="Si punojmë me klientët"
-          subtitle="Proces i thjeshtë, i qartë dhe i fokusuar në rezultat – nga idea deri te lansimi."
+          title={t('process.title')}
+          subtitle={t('process.subtitle')}
         />
         <div className="mt-10 grid grid-cols-1 md:grid-cols-4 gap-6">
           <div className="section-gradient rounded-2xl border border-lightest-navy/20 px-6 py-8">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent mb-2">01</p>
-            <h3 className="text-lg font-semibold text-lightest-slate mb-2">Discovery</h3>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent mb-2">{t('process.step1.number')}</p>
+            <h3 className="text-lg font-semibold text-lightest-slate mb-2">{t('process.step1.title')}</h3>
             <p className="text-sm text-light-slate">
-              Kuptojmë biznesin, sfidat dhe qëllimet e tua. Definojmë qartë çfarë po ndërtojmë dhe pse.
+              {t('process.step1.text')}
             </p>
           </div>
           <div className="section-gradient rounded-2xl border border-lightest-navy/20 px-6 py-8">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent mb-2">02</p>
-            <h3 className="text-lg font-semibold text-lightest-slate mb-2">Design & Architecture</h3>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent mb-2">{t('process.step2.number')}</p>
+            <h3 className="text-lg font-semibold text-lightest-slate mb-2">{t('process.step2.title')}</h3>
             <p className="text-sm text-light-slate">
-              Krijojmë UX/UI moderne dhe arkitekturë teknike të sigurt, të gatshme për rritje.
+              {t('process.step2.text')}
             </p>
           </div>
           <div className="section-gradient rounded-2xl border border-lightest-navy/20 px-6 py-8">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent mb-2">03</p>
-            <h3 className="text-lg font-semibold text-lightest-slate mb-2">Development</h3>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent mb-2">{t('process.step3.number')}</p>
+            <h3 className="text-lg font-semibold text-lightest-slate mb-2">{t('process.step3.title')}</h3>
             <p className="text-sm text-light-slate">
-              Zbatojmë me sprint-e të qarta, komunikim transparent dhe deploy të shpeshtë.
+              {t('process.step3.text')}
             </p>
           </div>
           <div className="section-gradient rounded-2xl border border-lightest-navy/20 px-6 py-8">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent mb-2">04</p>
-            <h3 className="text-lg font-semibold text-lightest-slate mb-2">Launch & Support</h3>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent mb-2">{t('process.step4.number')}</p>
+            <h3 className="text-lg font-semibold text-lightest-slate mb-2">{t('process.step4.title')}</h3>
             <p className="text-sm text-light-slate">
-              Lansim i sigurt, monitorim dhe mirëmbajtje – që produkti të rritet bashkë me biznesin tënd.
+              {t('process.step4.text')}
             </p>
           </div>
         </div>
       </section>
+
+      {/* Tools & Technologies */}
+      <div className='container-page pt-36 pb-0'>
+          <SectionHeading
+                kicker={t('technologies.title')}
+                title={t('technologies.title')}
+                subtitle={t('technologies.subtitle')}
+          />
+              
+          <TechMarquee />
+      </div>
 
       {/* LOGO CLOUD */}
       <section className="pt-30 pb-46 px-10">
@@ -150,6 +142,32 @@ export default function Home(){
         />
   
         <LogoCloud />
+      </section>
+
+      {/* Latest Posts */}
+      <section id="latest-blogs" className='px-10 lg:px-16 xl:px-36 py-20'>
+        <SectionHeading
+            title={t('latestPosts.title')}
+            subtitle={t('latestPosts.subtitle')}
+        />
+        
+        <LatestPosts />
+
+        {/* View All Button */}
+        <div className="mt-12 text-center">
+          <a href="/blog" className="btn-ghost p-4">
+            {t('latestPosts.viewAll')}
+          </a>
+        </div>
+      </section>
+
+      {/* Tech News Carousel */}
+      <section className="px-10 lg:px-16 xl:px-36 py-20">
+        <SectionHeading
+          title={t('techNews.title')}
+          subtitle={t('techNews.subtitle')}
+        />
+        <TechNewsCarousel />
       </section>
 
       {/* KARRIERA (teaser) */}
@@ -166,17 +184,6 @@ export default function Home(){
           <a href="/careers" className="btn-ghost p-4">{t('careers.viewOpenings')}</a>
         </div>
       </section>
-
-      {/* Tools & Technologies */}
-      <div className='container-page pt-36 pb-0'>
-          <SectionHeading
-                kicker={t('technologies.title')}
-                title={t('technologies.title')}
-                subtitle={t('technologies.subtitle')}
-          />
-              
-          <TechMarquee />
-      </div>
 
       {/* KONTAKT – CTA */}
       <section id="kontakt" className="my-24 md:mt-12 px-10 lg:px-16 xl:px-36 pb-16">

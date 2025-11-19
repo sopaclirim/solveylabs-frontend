@@ -98,5 +98,48 @@
     "madeIn": "Dizajnuar me pasion në Prishtinë."
   },
 
-  "common": { "loading": "Duke u ngarkuar…" }
+  "common": { "loading": "Duke u ngarkuar…" },
+
+  "clients":{
+    "title": "Partnerë & bashkëpunime",
+    "text": "Një ekosistem që ndërtojmë dhe rritim bashkë."
+  },
+
+  "latestPosts": {
+    "title": "Insight-et e Fundit",
+    "subtitle": "Eksploro artikujt, tutorial-et dhe insight-et e fundit të industrisë",
+    "viewAll": "Shiko Të Gjitha Artikujt",
+    "readMore": "Lexo më shumë"
+  },
+
+  "process": {
+    "title": "Si punojmë me klientët",
+    "subtitle": "Proces i thjeshtë, i qartë dhe i fokusuar në rezultat – nga idea deri te lansimi.",
+    "step1": {
+      "number": "01",
+      "title": "Discovery",
+      "text": "Kuptojmë biznesin, sfidat dhe qëllimet e tua. Definojmë qartë çfarë po ndërtojmë dhe pse."
+    },
+    "step2": {
+      "number": "02",
+      "title": "Design & Architecture",
+      "text": "Krijojmë UX/UI moderne dhe arkitekturë teknike të sigurt, të gatshme për rritje."
+    },
+    "step3": {
+      "number": "03",
+      "title": "Development",
+      "text": "Zbatojmë me sprint-e të qarta, komunikim transparent dhe deploy të shpeshtë."
+    },
+    "step4": {
+      "number": "04",
+      "title": "Launch & Support",
+      "text": "Lansim i sigurt, monitorim dhe mirëmbajtje – që produkti të rritet bashkë me biznesin tënd."
+    }
+  },
+
+  "techNews": {
+    "title": "Lajme Teknologjie nga Bota",
+    "subtitle": "Qëndro i përditësuar me lajmet dhe inovacionet më të fundit të teknologjisë",
+    "category": "Lajme Teknologjie"
+  }
 }

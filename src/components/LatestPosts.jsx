@@ -20,6 +20,7 @@ function IconArrowRight(props) {
 
 // Blog Card Component
 function BlogCard({ title, excerpt, date, category, image, slug }) {
+  const { t } = useTranslation('common');
   return (
     <a 
       href={`/blog/${slug}`}
@@ -39,7 +40,7 @@ function BlogCard({ title, excerpt, date, category, image, slug }) {
           </div>
         )}
         {category && (
-          <span className="absolute top-4 left-4 px-3 py-1 text-xs font-semibold uppercase tracking-wider bg-accent/90 text-navy rounded-full">
+          <span className="absolute top-4 left-4 px-3 py-1 text-xs font-semibold uppercase tracking-wider bg-accent/90 text-dark-navy rounded-full border border-accent/50">
             {category}
           </span>
         )}
@@ -59,7 +60,7 @@ function BlogCard({ title, excerpt, date, category, image, slug }) {
         
         {/* Read More Link */}
         <div className="flex items-center text-accent text-sm font-semibold group-hover:gap-2 transition-all">
-          <span>Lexo më shumë</span>
+          <span>{t('latestPosts.readMore')}</span>
           <IconArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
         </div>
       </div>

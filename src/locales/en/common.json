@@ -104,5 +104,43 @@
   "clients":{
     "title": "Partners & collaborations",
     "text": "An ecosystem we build and grow with."
+  },
+
+  "latestPosts": {
+    "title": "Latest Insights",
+    "subtitle": "Explore our latest articles, tutorials, and industry insights",
+    "viewAll": "View All Articles",
+    "readMore": "Read more"
+  },
+
+  "process": {
+    "title": "How we work with clients",
+    "subtitle": "Simple, clear and result-focused process — from idea to launch.",
+    "step1": {
+      "number": "01",
+      "title": "Discovery",
+      "text": "We understand your business, challenges and goals. We clearly define what we're building and why."
+    },
+    "step2": {
+      "number": "02",
+      "title": "Design & Architecture",
+      "text": "We create modern UX/UI and secure technical architecture, ready for growth."
+    },
+    "step3": {
+      "number": "03",
+      "title": "Development",
+      "text": "We implement with clear sprints, transparent communication and frequent deployments."
+    },
+    "step4": {
+      "number": "04",
+      "title": "Launch & Support",
+      "text": "Secure launch, monitoring and maintenance — so the product grows with your business."
+    }
+  },
+
+  "techNews": {
+    "title": "Tech News from Around the World",
+    "subtitle": "Stay updated with the latest technology news and innovations",
+    "category": "Technology News"
   }
 }

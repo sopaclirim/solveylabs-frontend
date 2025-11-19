@@ -118,8 +118,10 @@ export default function Footer() {
                     </div>
                 </div>
 
+                <hr className="border-lightest-navy/10 mt-12" />
+
                 {/* Bottom bar */}
-                <div className="mt-18 flex flex-col md:flex-row items-center justify-between gap-3 text-slate text-sm">
+                <div className="mt-10 flex flex-col md:flex-row items-center justify-between gap-3 text-slate text-sm">
                     <p>&copy; {year} {t("brand")}. {t("footer.rights")}</p>
                     <p className="opacity-80">{t("footer.madeIn")}</p>
                 </div>

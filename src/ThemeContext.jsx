@@ -5,15 +5,14 @@ const ThemeContext = createContext();
 export function ThemeProvider({ children }) {
   const [theme, setTheme] = useState('dark');
 
-  // Lexo nga localStorage ose nga preferenca e sistemit
+  // Lexo nga localStorage, default gjithmonë dark mode
   useEffect(() => {
     const stored = window.localStorage.getItem('sl-theme');
     if (stored === 'light' || stored === 'dark') {
       setTheme(stored);
     } else {
-      const prefersDark = window.matchMedia &&
-        window.matchMedia('(prefers-color-scheme: dark)').matches;
-      setTheme(prefersDark ? 'dark' : 'light');
+      // Default gjithmonë dark mode
+      setTheme('dark');
     }
   }, []);
 

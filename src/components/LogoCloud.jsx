@@ -1,11 +1,11 @@
 function Logo({ label, imgSrc, href }) {
   const content = (
-    <div className="cursor-pointer h-40 opacity-80 hover:opacity-100 transition grid place-items-center text-lightest-slate/80 text-sm border border-lightest-navy/10 rounded-md px-3 badge-gradient">
+    <div className="cursor-pointer h-40 transition-all grid place-items-center text-lightest-slate/80 text-sm border border-lightest-navy/10 rounded-md px-3 badge-gradient logo-hover">
       {imgSrc ? (
         <img
           src={imgSrc}
           alt={label}
-          className="max-h-18 object-contain"
+          className="max-h-18 object-contain opacity-100"
           onError={(e) => {
             e.currentTarget.replaceWith(document.createTextNode(label));
           }}
@@ -29,7 +29,7 @@ function Logo({ label, imgSrc, href }) {
 const clients = [
   { label: "Meta",       imgSrc: "https://cdn.simpleicons.org/meta" },
   { label: "Apple",      imgSrc: "https://cdn.simpleicons.org/apple" },
-  { label: "Shopify",    imgSrc: "https://cdn.simpleicons.org/shopify" },
+  { label: "Spotify",    imgSrc: "https://cdn.simpleicons.org/spotify" },
   { label: "Netflix",    imgSrc: "https://cdn.simpleicons.org/netflix" },
 ];
 

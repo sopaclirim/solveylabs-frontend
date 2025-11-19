@@ -97,5 +97,48 @@
     "madeIn": "Conçu avec passion à Pristina."
   },
 
-  "common": { "loading": "Chargement…" }
+  "common": { "loading": "Chargement…" },
+
+  "clients":{
+    "title": "Partenaires & collaborations",
+    "text": "Un écosystème que nous construisons et développons ensemble."
+  },
+
+  "latestPosts": {
+    "title": "Derniers aperçus",
+    "subtitle": "Explorez nos derniers articles, tutoriels et aperçus de l'industrie",
+    "viewAll": "Voir tous les articles",
+    "readMore": "Lire la suite"
+  },
+
+  "process": {
+    "title": "Comment nous travaillons avec les clients",
+    "subtitle": "Processus simple, clair et axé sur les résultats — de l'idée au lancement.",
+    "step1": {
+      "number": "01",
+      "title": "Découverte",
+      "text": "Nous comprenons votre entreprise, vos défis et vos objectifs. Nous définissons clairement ce que nous construisons et pourquoi."
+    },
+    "step2": {
+      "number": "02",
+      "title": "Design & Architecture",
+      "text": "Nous créons une UX/UI moderne et une architecture technique sécurisée, prête pour la croissance."
+    },
+    "step3": {
+      "number": "03",
+      "title": "Développement",
+      "text": "Nous implémentons avec des sprints clairs, une communication transparente et des déploiements fréquents."
+    },
+    "step4": {
+      "number": "04",
+      "title": "Lancement & Support",
+      "text": "Lancement sécurisé, surveillance et maintenance — pour que le produit grandisse avec votre entreprise."
+    }
+  },
+
+  "techNews": {
+    "title": "Actualités Tech du Monde",
+    "subtitle": "Restez à jour avec les dernières actualités technologiques et innovations",
+    "category": "Actualités Tech"
+  }
 }
