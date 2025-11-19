@@ -54,74 +54,79 @@ export default function TeamCarousel() {
     members[startIndex],
     members[(startIndex + 1) % members.length],
     members[(startIndex + 2) % members.length],
+    members[(startIndex + 3) % members.length],
   ];
 
   return (
-    <div className="mt-10 max-w-6xl mx-auto mb-10">
-      <div className="relative px-2 md:px-8 lg:px-10">
-        {/* Strip i kartave */}
-        <div
-          key={startIndex}
-          className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 sl-slide-fade"
-        >
-          {visible.map((m, idx) => (
-            <article
-              key={m.name + idx}
-              className="section-gradient rounded-1xl border border-lightest-navy/20 flex flex-col items-center text-center h-full px-12 py-12"
-            >
-              <img
-                src={m.img}
-                alt={m.name}
-                className="w-35 h-35 rounded-full object-cover border-2 border-accent mb-4"
-              />
-              <h3 className="text-lg font-semibold text-lightest-slate">{m.name}</h3>
-              <p className="text-sm text-light-slate mt-1">{m.role}</p>
-              <p className="text-sm mt-3 text-light-slate/90">
-                {m.bio}
-              </p>
-            </article>
-          ))}
-        </div>
+    <div className="mt-10 max-w-6xl mx-auto mb-10 relative">
+      {/* Butonat e navigimit anash */}
+      <button
+        type="button"
+        onClick={prev}
+        className="hidden md:flex absolute left-0 -translate-x-12 top-1/2 -translate-y-1/2 h-10 w-10 items-center justify-center text-lightest-slate hover:text-accent transition-colors border border-lightest-navy/40 hover:border-accent rounded-full z-10"
+        aria-label="Ekipi i mëparshëm"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M15.25 19.25L8.75 12l6.5-7.25" />
+        </svg>
+      </button>
 
-        {/* Butonat e navigimit */}
-        <button
-          type="button"
-          onClick={prev}
-          className="hidden md:flex absolute left-0 -translate-x-1/2 top-1/2 -translate-y-1/2 h-10 w-10 items-center justify-center text-lightest-slate hover:text-accent transition-colors"
-          aria-label="Ekipi i mëparshëm"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M15.25 19.25L8.75 12l6.5-7.25" />
-          </svg>
-        </button>
+      <button
+        type="button"
+        onClick={next}
+        className="hidden md:flex absolute right-0 translate-x-12 top-1/2 -translate-y-1/2 h-10 w-10 items-center justify-center text-lightest-slate hover:text-accent transition-colors border border-lightest-navy/40 hover:border-accent rounded-full z-10"
+        aria-label="Ekipi tjetër"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M8.75 4.75L15.25 12l-6.5 7.25" />
+        </svg>
+      </button>
 
-        <button
-          type="button"
-          onClick={next}
-          className="hidden md:flex absolute right-0 translate-x-1/2 top-1/2 -translate-y-1/2 h-10 w-10 items-center justify-center text-lightest-slate hover:text-accent transition-colors"
-          aria-label="Ekipi tjetër"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M8.75 4.75L15.25 12l-6.5 7.25" />
-          </svg>
-        </button>
+      {/* Strip i kartave */}
+      <div
+        key={startIndex}
+        className="grid grid-cols-1 md:grid-cols-4 gap-6 lg:gap-8 sl-slide-fade"
+      >
+        {visible.map((m, idx) => (
+          <article
+            key={m.name + idx}
+            className="section-gradient rounded-xl border border-lightest-navy/20 flex flex-col items-center text-center h-full px-10 py-14 min-h-[380px]"
+          >
+            <img
+              src={m.img}
+              alt={m.name}
+              className="w-28 h-28 rounded-full object-cover border-2 border-accent mb-4"
+            />
+            <h3 className="text-lg font-semibold text-lightest-slate">{m.name}</h3>
+            <p className="text-sm text-light-slate mt-1">{m.role}</p>
+            <p className="text-sm mt-3 text-light-slate/90">
+              {m.bio}
+            </p>
+          </article>
+        ))}
       </div>
 
-      {/* Butona edhe në mobile (poshtë strip-it) */}
+      {/* Butona për mobile (poshtë strip-it) */}
       <div className="mt-6 flex md:hidden items-center justify-center gap-4">
         <button
           type="button"
           onClick={prev}
-          className="h-9 px-4 inline-flex items-center justify-center text-lightest-slate text-base"
+          className="h-10 w-10 inline-flex items-center justify-center text-lightest-slate hover:text-accent transition-colors border border-lightest-navy/40 hover:border-accent rounded-full"
+          aria-label="Ekipi i mëparshëm"
         >
-          ←
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M15.25 19.25L8.75 12l6.5-7.25" />
+          </svg>
         </button>
         <button
           type="button"
           onClick={next}
-          className="h-9 px-4 inline-flex items-center justify-center text-lightest-slate text-base"
+          className="h-10 w-10 inline-flex items-center justify-center text-lightest-slate hover:text-accent transition-colors border border-lightest-navy/40 hover:border-accent rounded-full"
+          aria-label="Ekipi tjetër"
         >
-          →
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M8.75 4.75L15.25 12l-6.5 7.25" />
+          </svg>
         </button>
       </div>
     </div>

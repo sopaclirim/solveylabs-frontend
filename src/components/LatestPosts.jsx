@@ -80,7 +80,7 @@ export default function LatestPosts() {
       excerpt: 'Zbulo tendencat më të fundit në zhvillimin e web-it që po transformojnë industrinë dixhitale dhe si mund t\'i përdorësh ato për biznesin tënd.',
       date: 'May 15, 2024',
       category: 'Web Dev',
-      image: null
+      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80'
     },
     {
       id: 2,
@@ -89,7 +89,7 @@ export default function LatestPosts() {
       excerpt: 'Teknika dhe best practices për të krijuar aplikacione React super të shpejta që ofrojnë përvojë të shkëlqyer për përdoruesit.',
       date: 'May 10, 2024',
       category: 'React',
-      image: null
+      image: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=800&q=80'
     },
     {
       id: 3,
@@ -98,7 +98,7 @@ export default function LatestPosts() {
       excerpt: 'Një dizajn i mirë nuk është vetëm estetikë - është strategji biznesi. Shiko si ndikon UX në konvertim dhe lojalitet.',
       date: 'May 5, 2024',
       category: 'Design',
-      image: null
+      image: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=800&q=80'
     },
     {
       id: 4,
@@ -107,7 +107,7 @@ export default function LatestPosts() {
       excerpt: 'Nga React te Node.js, nga PostgreSQL te MongoDB - udhëzues praktik për të zgjedhur teknologjitë e duhura për projektin tënd.',
       date: 'Apr 28, 2024',
       category: 'Tech',
-      image: null
+      image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80'
     }
   ];
 
