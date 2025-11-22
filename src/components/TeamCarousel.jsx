@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import clirimProfile from '../assets/clirim-profile.jpg';
 
 const members = [
   {
@@ -16,7 +17,7 @@ const members = [
   {
     name: 'Clirim Sopa',
     role: 'Project Manager',
-    img: 'https://images.unsplash.com/photo-1525134479668-1bee5c7c6845?auto=format&fit=crop&w=240&q=80',
+    img: clirimProfile,
     bio: 'Koordinon projektet nga ideja deri në lansim, duke mbajtur klientët të informuar në çdo hap.',
   },
   {
@@ -95,7 +96,9 @@ export default function TeamCarousel() {
             <img
               src={m.img}
               alt={m.name}
-              className="w-28 h-28 rounded-full object-cover border-2 border-accent mb-4"
+              className={`w-28 h-28 rounded-full object-cover border-2 border-accent mb-4 ${
+                m.name === 'Clirim Sopa' ? 'object-top' : ''
+              }`}
             />
             <h3 className="text-lg font-semibold text-lightest-slate">{m.name}</h3>
             <p className="text-sm text-light-slate mt-1">{m.role}</p>
