@@ -35,8 +35,8 @@ export default function Footer() {
 
                         <address className="not-italic text-sm leading-6 text-light-slate">
                             <div className="font-medium text-lightest-slate">{t("footer.office")}</div>
-                            <div>Rr. Shembull 123, 10000 Prishtinë</div>
-                            <div>Kosovë</div>
+                            <div>{t("footer.address")}</div>
+                            <div>{t("footer.country")}</div>
                             <div className="mt-2">
                                 <a className="hover:underline" href="mailto:hello@solveylabs.com">hello@solveylabs.com</a>{" · "}
                                 <a className="hover:underline" href="tel:+38344123456">+383 44 123 456</a>
@@ -105,7 +105,7 @@ export default function Footer() {
                             <div className="overflow-hidden rounded-xl border border-white/10 bg-white/5">
                                 <div className="aspect-video">
                                     <iframe
-                                        title="Solvey Labs Office"
+                                        title={t("footer.officeMap")}
                                         loading="lazy"
                                         referrerPolicy="no-referrer-when-downgrade"
                                         className="h-full w-full"

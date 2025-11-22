@@ -84,6 +84,8 @@
   "footer": {
     "tagline": "We craft modern websites & apps focused on performance, security and minimalist design.",
     "office": "Office",
+    "address": "Sample St. 123, 10000 Pristina",
+    "country": "Kosovo",
     "services": "Services",
     "s_custom": "Custom Software Development",
     "s_web": "Web Applications",
@@ -95,11 +97,58 @@
     "rights": "All rights reserved.",
     "madeIn": "Solvey Labs L.L.C",
     "payments": "Payments",
-    "weAccept": "",
-    "findUs": ""
+    "weAccept": "We accept",
+    "findUs": "Find Us",
+    "officeMap": "Solvey Labs Office"
   },
 
-  "common": { "loading": "Loading…" },
+  "common": { 
+    "loading": "Loading…",
+    "error": "Error",
+    "menu": "Menu",
+    "logoAlt": "SOLVEY Technology & Software"
+  },
+
+  "team": {
+    "prevTeam": "Previous team",
+    "nextTeam": "Next team",
+    "members": {
+      "member1": {
+        "name": "Alex Johnson",
+        "role": "Lead Software Engineer",
+        "bio": "Leads the technical team and ensures every project is scalable, secure and performant."
+      },
+      "member2": {
+        "name": "Sarah Williams",
+        "role": "Product Designer",
+        "bio": "Designs modern and intuitive experiences combining great UX with clean UI."
+      },
+      "member3": {
+        "name": "Michael Chen",
+        "role": "Frontend Engineer",
+        "bio": "Specializes in React and creates ultra-fast and responsive UI for web."
+      },
+      "member4": {
+        "name": "David Martinez",
+        "role": "Backend Engineer",
+        "bio": "Builds robust APIs and secure architecture that handles high traffic."
+      },
+      "member5": {
+        "name": "Emily Davis",
+        "role": "Customer Success",
+        "bio": "Ensures every client feels supported and that our solutions deliver real value."
+      }
+    }
+  },
+
+  "techNews": {
+    "title": "Tech News from Around the World",
+    "subtitle": "Stay updated with the latest technology news and innovations",
+    "category": "Technology News",
+    "prevNews": "Previous news",
+    "nextNews": "Next news",
+    "goToNews": "Go to news"
+  },
 
   "clients":{
     "title": "Partners & collaborations",
@@ -136,11 +185,5 @@
       "title": "Launch & Support",
       "text": "Secure launch, monitoring and maintenance — so the product grows with your business."
     }
-  },
-
-  "techNews": {
-    "title": "Tech News from Around the World",
-    "subtitle": "Stay updated with the latest technology news and innovations",
-    "category": "Technology News"
   }
 }

@@ -85,6 +85,8 @@
   "footer": {
     "tagline": "Nous créons des sites et applications modernes axés sur la performance, la sécurité et un design minimaliste.",
     "office": "Bureau",
+    "address": "Rue Exemple 123, 10000 Pristina",
+    "country": "Kosovo",
     "services": "Services",
     "s_custom": "Développement logiciel sur mesure",
     "s_web": "Applications Web",
@@ -92,12 +94,62 @@
     "s_cloud": "Cloud & DevOps",
     "links": "Liens",
     "privacy": "Confidentialité",
-    "terms": "Conditions d’utilisation",
+    "terms": "Conditions d'utilisation",
     "rights": "Tous droits réservés.",
-    "madeIn": "Conçu avec passion à Pristina."
+    "madeIn": "Conçu avec passion à Pristina.",
+    "payments": "Paiements",
+    "weAccept": "Nous acceptons",
+    "findUs": "Trouvez-nous",
+    "officeMap": "Bureau Solvey Labs"
   },
 
-  "common": { "loading": "Chargement…" },
+  "common": { 
+    "loading": "Chargement…",
+    "error": "Erreur",
+    "menu": "Menu",
+    "logoAlt": "SOLVEY Technology & Software"
+  },
+
+  "team": {
+    "prevTeam": "Équipe précédente",
+    "nextTeam": "Équipe suivante",
+    "members": {
+      "member1": {
+        "name": "Alex Johnson",
+        "role": "Lead Software Engineer",
+        "bio": "Dirige l'équipe technique et garantit que chaque projet est évolutif, sécurisé et performant."
+      },
+      "member2": {
+        "name": "Sarah Williams",
+        "role": "Product Designer",
+        "bio": "Conçoit des expériences modernes et intuitives combinant un excellent UX avec une interface utilisateur épurée."
+      },
+      "member3": {
+        "name": "Michael Chen",
+        "role": "Frontend Engineer",
+        "bio": "Spécialisé en React et crée des interfaces utilisateur ultra-rapides et réactives pour le web."
+      },
+      "member4": {
+        "name": "David Martinez",
+        "role": "Backend Engineer",
+        "bio": "Construit des API robustes et une architecture sécurisée qui gère un trafic élevé."
+      },
+      "member5": {
+        "name": "Emily Davis",
+        "role": "Customer Success",
+        "bio": "Garantit que chaque client se sent soutenu et que nos solutions apportent une valeur réelle."
+      }
+    }
+  },
+
+  "techNews": {
+    "title": "Actualités Tech du Monde",
+    "subtitle": "Restez à jour avec les dernières actualités technologiques et innovations",
+    "category": "Actualités Tech",
+    "prevNews": "Actualité précédente",
+    "nextNews": "Actualité suivante",
+    "goToNews": "Aller à l'actualité"
+  },
 
   "clients":{
     "title": "Partenaires & collaborations",

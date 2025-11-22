@@ -85,6 +85,8 @@
   "footer": {
     "tagline": "Wir entwickeln moderne Websites & Apps mit Fokus auf Performance, Sicherheit und minimalistisches Design.",
     "office": "Büro",
+    "address": "Musterstraße 123, 10000 Pristina",
+    "country": "Kosovo",
     "services": "Leistungen",
     "s_custom": "Individuelle Softwareentwicklung",
     "s_web": "Web-Applikationen",
@@ -94,10 +96,60 @@
     "privacy": "Datenschutz",
     "terms": "Nutzungsbedingungen",
     "rights": "Alle Rechte vorbehalten.",
-    "madeIn": "Mit Leidenschaft in Pristina entworfen."
+    "madeIn": "Mit Leidenschaft in Pristina entworfen.",
+    "payments": "Zahlungen",
+    "weAccept": "Wir akzeptieren",
+    "findUs": "Finden Sie uns",
+    "officeMap": "Solvey Labs Büro"
   },
 
-  "common": { "loading": "Lädt…" },
+  "common": { 
+    "loading": "Lädt…",
+    "error": "Fehler",
+    "menu": "Menü",
+    "logoAlt": "SOLVEY Technology & Software"
+  },
+
+  "team": {
+    "prevTeam": "Vorheriges Team",
+    "nextTeam": "Nächstes Team",
+    "members": {
+      "member1": {
+        "name": "Alex Johnson",
+        "role": "Lead Software Engineer",
+        "bio": "Führt das technische Team und stellt sicher, dass jedes Projekt skalierbar, sicher und leistungsstark ist."
+      },
+      "member2": {
+        "name": "Sarah Williams",
+        "role": "Product Designer",
+        "bio": "Entwirft moderne und intuitive Erfahrungen, die großartiges UX mit sauberem UI kombinieren."
+      },
+      "member3": {
+        "name": "Michael Chen",
+        "role": "Frontend Engineer",
+        "bio": "Spezialisiert sich auf React und erstellt ultra-schnelle und responsive UI für das Web."
+      },
+      "member4": {
+        "name": "David Martinez",
+        "role": "Backend Engineer",
+        "bio": "Baut robuste APIs und sichere Architektur auf, die hohen Traffic bewältigt."
+      },
+      "member5": {
+        "name": "Emily Davis",
+        "role": "Customer Success",
+        "bio": "Stellt sicher, dass sich jeder Kunde unterstützt fühlt und unsere Lösungen echten Wert liefern."
+      }
+    }
+  },
+
+  "techNews": {
+    "title": "Technologie-Nachrichten aus aller Welt",
+    "subtitle": "Bleiben Sie auf dem Laufenden mit den neuesten Technologienachrichten und Innovationen",
+    "category": "Technologie-Nachrichten",
+    "prevNews": "Vorherige Nachricht",
+    "nextNews": "Nächste Nachricht",
+    "goToNews": "Zur Nachricht gehen"
+  },
 
   "clients":{
     "title": "Partner & Kooperationen",

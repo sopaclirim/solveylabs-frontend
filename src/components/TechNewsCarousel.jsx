@@ -112,7 +112,7 @@ export default function TechNewsCarousel() {
         type="button"
         onClick={prev}
         className="hidden md:flex absolute left-0 -translate-x-12 top-1/2 -translate-y-1/2 h-10 w-10 items-center justify-center text-lightest-slate hover:text-accent transition-colors border border-lightest-navy/40 hover:border-accent rounded-full z-10"
-        aria-label="Lajmi i mëparshëm"
+        aria-label={t('techNews.prevNews')}
       >
         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
           <path strokeLinecap="round" strokeLinejoin="round" d="M15.25 19.25L8.75 12l6.5-7.25" />
@@ -123,7 +123,7 @@ export default function TechNewsCarousel() {
         type="button"
         onClick={next}
         className="hidden md:flex absolute right-0 translate-x-12 top-1/2 -translate-y-1/2 h-10 w-10 items-center justify-center text-lightest-slate hover:text-accent transition-colors border border-lightest-navy/40 hover:border-accent rounded-full z-10"
-        aria-label="Lajmi tjetër"
+        aria-label={t('techNews.nextNews')}
       >
         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
           <path strokeLinecap="round" strokeLinejoin="round" d="M8.75 4.75L15.25 12l-6.5 7.25" />
@@ -193,7 +193,7 @@ export default function TechNewsCarousel() {
                 ? 'w-8 bg-accent'
                 : 'w-2 bg-lightest-navy/40 hover:bg-lightest-navy/60'
             }`}
-            aria-label={`Go to news ${idx + 1}`}
+            aria-label={`${t('techNews.goToNews')} ${idx + 1}`}
           />
         ))}
       </div>
@@ -204,7 +204,7 @@ export default function TechNewsCarousel() {
           type="button"
           onClick={prev}
           className="h-10 w-10 inline-flex items-center justify-center text-gray-700 hover:text-accent transition-colors border border-gray-300 hover:border-accent rounded-full bg-white"
-          aria-label="Lajmi i mëparshëm"
+          aria-label={t('techNews.prevNews')}
         >
           <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <path strokeLinecap="round" strokeLinejoin="round" d="M15.25 19.25L8.75 12l6.5-7.25" />
@@ -214,7 +214,7 @@ export default function TechNewsCarousel() {
           type="button"
           onClick={next}
           className="h-10 w-10 inline-flex items-center justify-center text-gray-700 hover:text-accent transition-colors border border-gray-300 hover:border-accent rounded-full bg-white"
-          aria-label="Lajmi tjetër"
+          aria-label={t('techNews.nextNews')}
         >
           <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <path strokeLinecap="round" strokeLinejoin="round" d="M8.75 4.75L15.25 12l-6.5 7.25" />

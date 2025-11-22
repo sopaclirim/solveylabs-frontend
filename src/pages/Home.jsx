@@ -126,8 +126,14 @@ export default function Home(){
       </section>
 
       {/* Tech News Carousel */}
-      <section className="section-tech-gradient px-10 lg:px-16 xl:px-36 py-34">
-        <div className="max-w-7xl mx-auto">
+      <section className="section-white px-10 lg:px-16 xl:px-36 pt-34 pb-48 relative">
+        {/* SVG Wave Decoration */}
+        <div className="absolute bottom-0 left-0 w-full overflow-hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="w-full h-auto">
+            <path fill="#112240" fillOpacity="1" d="M0,288L80,288C160,288,320,288,480,272C640,256,800,224,960,202.7C1120,181,1280,171,1360,165.3L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+          </svg>
+        </div>
+        <div className="max-w-7xl mx-auto relative z-10">
           <SectionHeading
             title={t('techNews.title')}
             subtitle={t('techNews.subtitle')}
@@ -197,14 +203,16 @@ export default function Home(){
       </section>
 
       {/* Tools & Technologies */}
-      <div className='section-tech-gradient container-page py-20'>
-          <SectionHeading
-                kicker={t('technologies.title')}
-                title={t('technologies.title')}
-                subtitle={t('technologies.subtitle')}
-          />
-              
-          <TechMarquee />
+      <div className='section-tech-gradient'>
+        <div className='container-page py-20'>
+            <SectionHeading
+                  kicker={t('technologies.title')}
+                  title={t('technologies.title')}
+                  subtitle={t('technologies.subtitle')}
+            />
+                
+            <TechMarquee />
+        </div>
       </div>
 
       {/* LOGO CLOUD */}

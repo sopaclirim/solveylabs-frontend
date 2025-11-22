@@ -86,6 +86,8 @@
   "footer": {
     "tagline": "Ndërtojmë faqe & aplikacione moderne me fokus në performancë, siguri dhe dizajn minimalist.",
     "office": "Zyra",
+    "address": "Rr. Shembull 123, 10000 Prishtinë",
+    "country": "Kosovë",
     "services": "Shërbime",
     "s_custom": "Zhvillim softueri me porosi",
     "s_web": "Aplikacione Web",
@@ -95,10 +97,60 @@
     "privacy": "Privatësia",
     "terms": "Kushtet e përdorimit",
     "rights": "Të gjitha të drejtat e rezervuara.",
-    "madeIn": "Dizajnuar me pasion në Prishtinë."
+    "madeIn": "Dizajnuar me pasion në Prishtinë.",
+    "payments": "Pagesat",
+    "weAccept": "Ne pranojmë",
+    "findUs": "Na Gjeni",
+    "officeMap": "Zyra e Solvey Labs"
   },
 
-  "common": { "loading": "Duke u ngarkuar…" },
+  "common": { 
+    "loading": "Duke u ngarkuar…",
+    "error": "Gabim",
+    "menu": "Menu",
+    "logoAlt": "SOLVEY Technology & Software"
+  },
+
+  "team": {
+    "prevTeam": "Ekipi i mëparshëm",
+    "nextTeam": "Ekipi tjetër",
+    "members": {
+      "member1": {
+        "name": "Alex Johnson",
+        "role": "Lead Software Engineer",
+        "bio": "Udhëheq ekipin teknik dhe siguron që çdo projekt të jetë i shkallueshëm, i sigurt dhe performant."
+      },
+      "member2": {
+        "name": "Sarah Williams",
+        "role": "Product Designer",
+        "bio": "Dizajnon eksperienca moderne dhe intuitive duke kombinuar UX të mirë me UI të pastër."
+      },
+      "member3": {
+        "name": "Michael Chen",
+        "role": "Frontend Engineer",
+        "bio": "Specializohet në React dhe krijon UI ultra të shpejta dhe responsive për web."
+      },
+      "member4": {
+        "name": "David Martinez",
+        "role": "Backend Engineer",
+        "bio": "Ndërton API robuste dhe arkitekturë të sigurt që i përballon trafikun e lartë."
+      },
+      "member5": {
+        "name": "Emily Davis",
+        "role": "Customer Success",
+        "bio": "Siguron që çdo klient të ndihet i mbështetur dhe që zgjidhjet tona japin vlerë reale."
+      }
+    }
+  },
+
+  "techNews": {
+    "title": "Lajme Teknologjie nga Bota",
+    "subtitle": "Qëndro i përditësuar me lajmet dhe inovacionet më të fundit të teknologjisë",
+    "category": "Lajme Teknologjie",
+    "prevNews": "Lajmi i mëparshëm",
+    "nextNews": "Lajmi tjetër",
+    "goToNews": "Shko te lajmi"
+  },
 
   "clients":{
     "title": "Partnerë & bashkëpunime",

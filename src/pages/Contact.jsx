@@ -23,7 +23,7 @@ export default function Contact(){
       });
       setSent(true);
     }catch{
-      setErr('Error');
+      setErr(t('common.error'));
     }
   }
 

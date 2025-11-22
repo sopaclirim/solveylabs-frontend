@@ -25,7 +25,7 @@ export default function Careers(){
             await Http.post('/api/applications', fd, { headers: { 'Content-Type':'multipart/form-data' } });
             setSent(true);
         }catch{
-            setErr('Error');
+            setErr(t('common.error'));
         }
     }
 

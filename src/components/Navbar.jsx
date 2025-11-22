@@ -25,7 +25,7 @@ export default function Navbar() {
         <Link to="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
           <img 
             src={logoImage} 
-            alt="SOLVEY Technology & Software" 
+            alt={t('common.logoAlt')} 
             className="h-10 sm:h-11 md:h-12 lg:h-12 xl:h-14 w-auto object-contain transition-opacity hover:opacity-90"
             style={{ 
               imageRendering: 'crisp-edges',
@@ -51,7 +51,7 @@ export default function Navbar() {
         {/* Mobile */}
         <button
           className="md:hidden text-lightest-slate cursor-pointer"
-          aria-label="Menu"
+          aria-label={t('common.menu')}
           aria-expanded={open}
           aria-controls="mobile-menu"
           onClick={() => setOpen(s => !s)}
