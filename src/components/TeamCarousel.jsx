@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 const members = [
   {
-    name: 'Çlirim Sopa',
+    name: 'Valmir Mejzinolli',
     role: 'Lead Software Engineer',
     img: 'https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=240&q=80',
     bio: 'Udhëheq ekipin teknik dhe siguron që çdo projekt të jetë i shkallueshëm, i sigurt dhe performant.',
@@ -14,13 +14,13 @@ const members = [
     bio: 'Dizajnon eksperienca moderne dhe intuitive duke kombinuar UX të mirë me UI të pastër.',
   },
   {
-    name: 'Dren Morina',
+    name: 'Clirim Sopa',
     role: 'Project Manager',
     img: 'https://images.unsplash.com/photo-1525134479668-1bee5c7c6845?auto=format&fit=crop&w=240&q=80',
     bio: 'Koordinon projektet nga ideja deri në lansim, duke mbajtur klientët të informuar në çdo hap.',
   },
   {
-    name: 'Elira Berisha',
+    name: 'Vesa Mexhuani',
     role: 'Frontend Engineer',
     img: 'https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?auto=format&fit=crop&w=240&q=80',
     bio: 'Specializohet në React dhe krijon UI ultra të shpejta dhe responsive për web.',

@@ -11,7 +11,7 @@ export default function App(){
      {/* Overlay + përmbajtja e app-it */}
       <div className="app-skin relative z-10">
         
-        <main className="py-6">
+        <main>
           <Outlet />
         </main>
       </div>

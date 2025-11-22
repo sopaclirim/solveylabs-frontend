@@ -24,7 +24,7 @@ function BlogCard({ title, excerpt, date, category, image, slug }) {
   return (
     <a 
       href={`/blog/${slug}`}
-      className="group section-gradient rounded-2xl border border-lightest-navy/20 overflow-hidden hover:border-accent/50 transition-all duration-300 hover:shadow-lg hover:shadow-accent/10"
+      className="group bg-white rounded-2xl border border-gray-200 overflow-hidden hover:border-accent/50 transition-all duration-300 hover:shadow-lg hover:shadow-accent/10"
     >
       {/* Image */}
       <div className="relative h-48 overflow-hidden bg-lightest-navy/10">
@@ -51,10 +51,10 @@ function BlogCard({ title, excerpt, date, category, image, slug }) {
         {date && (
           <p className="text-xs text-accent font-medium mb-2">{date}</p>
         )}
-        <h3 className="text-xl font-bold text-lightest-slate mb-3 group-hover:text-accent transition-colors">
+        <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-accent transition-colors">
           {title}
         </h3>
-        <p className="text-sm text-light-slate mb-4 line-clamp-3">
+        <p className="text-sm text-gray-600 mb-4 line-clamp-3">
           {excerpt}
         </p>
         

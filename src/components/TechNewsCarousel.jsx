@@ -135,7 +135,7 @@ export default function TechNewsCarousel() {
         href={currentNews.url}
         target="_blank"
         rel="noopener noreferrer"
-        className="block group section-gradient rounded-2xl border border-lightest-navy/20 overflow-hidden hover:border-accent/50 transition-all duration-300 hover:shadow-lg hover:shadow-accent/10"
+        className="block group bg-white rounded-2xl border border-gray-200 overflow-hidden hover:border-accent/50 transition-all duration-300 hover:shadow-lg hover:shadow-accent/10"
       >
         <div className="grid md:grid-cols-2 gap-0">
           {/* Image */}
@@ -165,10 +165,10 @@ export default function TechNewsCarousel() {
                 {t('techNews.category')}
               </span>
             </div>
-            <h3 className="text-2xl md:text-3xl font-bold text-lightest-slate mb-4 group-hover:text-accent transition-colors line-clamp-2">
+            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 group-hover:text-accent transition-colors line-clamp-2">
               {currentNews.title}
             </h3>
-            <p className="text-sm md:text-base text-light-slate mb-6 line-clamp-3">
+            <p className="text-sm md:text-base text-gray-600 mb-6 line-clamp-3">
               {currentNews.description || currentNews.content}
             </p>
             <div className="flex items-center text-accent text-sm font-semibold">
@@ -203,7 +203,7 @@ export default function TechNewsCarousel() {
         <button
           type="button"
           onClick={prev}
-          className="h-10 w-10 inline-flex items-center justify-center text-lightest-slate hover:text-accent transition-colors border border-lightest-navy/40 hover:border-accent rounded-full"
+          className="h-10 w-10 inline-flex items-center justify-center text-gray-700 hover:text-accent transition-colors border border-gray-300 hover:border-accent rounded-full bg-white"
           aria-label="Lajmi i mëparshëm"
         >
           <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -213,7 +213,7 @@ export default function TechNewsCarousel() {
         <button
           type="button"
           onClick={next}
-          className="h-10 w-10 inline-flex items-center justify-center text-lightest-slate hover:text-accent transition-colors border border-lightest-navy/40 hover:border-accent rounded-full"
+          className="h-10 w-10 inline-flex items-center justify-center text-gray-700 hover:text-accent transition-colors border border-gray-300 hover:border-accent rounded-full bg-white"
           aria-label="Lajmi tjetër"
         >
           <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">

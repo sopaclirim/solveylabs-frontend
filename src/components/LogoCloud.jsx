@@ -1,6 +1,6 @@
 function Logo({ label, imgSrc, href }) {
   const content = (
-    <div className="cursor-pointer h-40 transition-all grid place-items-center text-lightest-slate/80 text-sm border border-lightest-navy/10 rounded-md px-3 badge-gradient logo-hover">
+    <div className="cursor-pointer h-40 transition-all grid place-items-center text-gray-700 text-sm border border-gray-200 rounded-md px-3 bg-white hover:bg-gray-50 hover:border-accent/50 logo-hover">
       {imgSrc ? (
         <img
           src={imgSrc}

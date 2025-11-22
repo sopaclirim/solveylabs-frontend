@@ -8,6 +8,7 @@ import TechMarquee from '../components/TechMarquee';
 import TeamCarousel from '../components/TeamCarousel';
 import LatestPosts from '../components/LatestPosts';
 import TechNewsCarousel from '../components/TechNewsCarousel';
+import AnimatedText from '../components/AnimatedText';
 
 function IconCode(props){ return (
   <svg {...props} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
@@ -33,36 +34,53 @@ export default function Home(){
   return (
     <div className="">
       {/* HERO */}
-      <section id="hero" className="min-h-[82vh] flex items-center justify-center text-center pt-16 pb-20 mb-16">
+      <section id="hero" className="section-tech-gradient min-h-[82vh] flex items-center justify-center text-center pt-24 pb-42">
         <div className="max-w-5xl px-10">
-          <p className="text-accent text-lg mb-3">{t('hero.hi')}</p>
-          <h1 className="text-5xl md:text-7xl font-bold text-lightest-slate mb-3">{t('hero.title')}</h1>
-          <h2 className="text-3xl md:text-5xl font-bold text-slate mb-6">{t('hero.subtitle')}</h2>
-          <p className="max-w-2xl mx-auto text-lg text-light-slate">{t('hero.tagline')}</p>
+          <p className="text-accent text-lg mb-3">
+            <AnimatedText text={t('hero.hi')} delay={0.1} delayPerLetter={0.02} />
+          </p>
+          <h1 className="text-5xl md:text-7xl font-bold text-lightest-slate mb-3">
+            <AnimatedText text={t('hero.title')} delay={0.2} delayPerLetter={0.03} />
+          </h1>
+          <h2 className="text-3xl md:text-5xl font-bold text-slate mb-6">
+            <AnimatedText text={t('hero.subtitle')} delay={0.4} delayPerLetter={0.02} />
+          </h2>
+          <p className="max-w-2xl mx-auto text-lg text-light-slate">
+            <AnimatedText text={t('hero.tagline')} delay={0.6} delayPerLetter={0.015} />
+          </p>
 
-          <div className="mt-8 flex items-center justify-center gap-3 px-2 ">
+          <div className="mt-8 flex items-center justify-center gap-3 px-2">
             <a href="/contact" className="btn-ghost text-base p-3">{t('hero.cta')}</a>
             <a href="#sherbimet" className="btn-primary text-base p-3 px-7 border-2 border-accent">{t('services.title')}</a>
           </div>
 
           {/* Stats */}
-          <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-3 px-1">
-            <StatBadge value="15+"  label={t('stats.projects')} />
-            <StatBadge value="99.9%" label={t('stats.uptime')} />
-            <StatBadge value="~30%+" label={t('stats.speed')} />
-            <StatBadge value="24/7" label={t('stats.support')} />
+          <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-3 px-1 items-stretch">
+            <div className="stats-badge-animate stats-badge-delay-1 h-full">
+              <StatBadge value="15+"  label={t('stats.projects')} />
+            </div>
+            <div className="stats-badge-animate stats-badge-delay-2 h-full">
+              <StatBadge value="99.9%" label={t('stats.uptime')} />
+            </div>
+            <div className="stats-badge-animate stats-badge-delay-3 h-full">
+              <StatBadge value="~30%+" label={t('stats.speed')} />
+            </div>
+            <div className="stats-badge-animate stats-badge-delay-4 h-full">
+              <StatBadge value="24/7" label={t('stats.support')} />
+            </div>
           </div>
         </div>
       </section>
 
       {/* SHËRBIMET */}
-      <section id="sherbimet" className="relative px-10 lg:px-16 xl:px-36 py-28 border-t border-lightest-navy/10">
-        <SectionHeading
-          kicker={t('services.title')}
-          title={t('services.title')}
-          subtitle={t('services.subtitle')}
-        />
-        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-2">
+      <section id="sherbimet" className="section-white relative px-10 lg:px-16 xl:px-36 py-34">
+        <div className="max-w-7xl mx-auto">
+          <SectionHeading
+            kicker={t('services.title')}
+            title={t('services.title')}
+            subtitle={t('services.subtitle')}
+          />
+          <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <FeatureCard icon={IconCode} title={t('services.s1')}>
             {t('services.s1d')}
           </FeatureCard>
@@ -72,59 +90,114 @@ export default function Home(){
           <FeatureCard icon={IconMobile} title={t('services.s3')}>
             {t('services.s3d')}
           </FeatureCard>
+          </div>
         </div>
       </section>
 
       {/* RRETH NESH */}
-      <div className='px-10 lg:px-16 xl:px-36 pt-18 pb-18'>
-        <section id="rreth-nesh" className="py-24 px-10 section-gradient border border-lightest-navy/20">
-          <SectionHeading
-            title={t('about.title')}
-            subtitle={t('about.text')}
-          />
+      <div className='px-10 lg:px-16 xl:px-36 py-34'>
+        <section id="rreth-nesh" className="py-16 md:py-24 px-8 md:px-16 lg:px-20 section-tech-gradient">
+          <div className="max-w-7xl mx-auto">
+            <SectionHeading
+              title={t('about.title')}
+              subtitle={t('about.text')}
+            />
+          </div>
         </section>
       </div>
 
-      {/* SI PUNOJME – Process */}
-      <section className="px-10 lg:px-16 xl:px-36 py-20">
-        <SectionHeading
-          title={t('process.title')}
-          subtitle={t('process.subtitle')}
-        />
-        <div className="mt-10 grid grid-cols-1 md:grid-cols-4 gap-6">
-          <div className="section-gradient rounded-2xl border border-lightest-navy/20 px-6 py-8">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent mb-2">{t('process.step1.number')}</p>
-            <h3 className="text-lg font-semibold text-lightest-slate mb-2">{t('process.step1.title')}</h3>
-            <p className="text-sm text-light-slate">
-              {t('process.step1.text')}
-            </p>
-          </div>
-          <div className="section-gradient rounded-2xl border border-lightest-navy/20 px-6 py-8">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent mb-2">{t('process.step2.number')}</p>
-            <h3 className="text-lg font-semibold text-lightest-slate mb-2">{t('process.step2.title')}</h3>
-            <p className="text-sm text-light-slate">
-              {t('process.step2.text')}
-            </p>
-          </div>
-          <div className="section-gradient rounded-2xl border border-lightest-navy/20 px-6 py-8">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent mb-2">{t('process.step3.number')}</p>
-            <h3 className="text-lg font-semibold text-lightest-slate mb-2">{t('process.step3.title')}</h3>
-            <p className="text-sm text-light-slate">
-              {t('process.step3.text')}
-            </p>
-          </div>
-          <div className="section-gradient rounded-2xl border border-lightest-navy/20 px-6 py-8">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent mb-2">{t('process.step4.number')}</p>
-            <h3 className="text-lg font-semibold text-lightest-slate mb-2">{t('process.step4.title')}</h3>
-            <p className="text-sm text-light-slate">
-              {t('process.step4.text')}
-            </p>
+      {/* Latest Posts */}
+      <section id="latest-blogs" className='section-white px-10 lg:px-16 xl:px-36 py-34'>
+        <div className="max-w-7xl mx-auto">
+          <SectionHeading
+              title={t('latestPosts.title')}
+              subtitle={t('latestPosts.subtitle')}
+          />
+          
+          <LatestPosts />
+
+          {/* View All Button */}
+          <div className="mt-12 text-center">
+            <a href="/blog" className="btn-ghost p-4">
+              {t('latestPosts.viewAll')}
+            </a>
           </div>
         </div>
       </section>
 
+      {/* Tech News Carousel */}
+      <section className="section-tech-gradient px-10 lg:px-16 xl:px-36 py-34">
+        <div className="max-w-7xl mx-auto">
+          <SectionHeading
+            title={t('techNews.title')}
+            subtitle={t('techNews.subtitle')}
+          />
+          <TechNewsCarousel />
+        </div>
+      </section>
+
+      {/* SI PUNOJME – Process */}
+      <section className="section-white px-10 lg:px-16 xl:px-36 py-34">
+        <div className="max-w-7xl mx-auto">
+          <SectionHeading
+            title={t('process.title')}
+            subtitle={t('process.subtitle')}
+          />
+        <div className="mt-10 grid grid-cols-1 md:grid-cols-4 gap-6">
+          <div 
+            className="rounded-2xl border border-lightest-navy/20 px-6 py-8 shadow-sm"
+            style={{
+              background: 'radial-gradient(circle at 15% 20%, rgba(37, 99, 235, 0.22), transparent 50%), radial-gradient(circle at 80% 20%, rgba(37, 99, 235, 0.18), transparent 45%), var(--color-light-navy)'
+            }}
+          >
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white/80 mb-2">{t('process.step1.number')}</p>
+            <h3 className="text-lg font-semibold text-white mb-2">{t('process.step1.title')}</h3>
+            <p className="text-sm text-white/90">
+              {t('process.step1.text')}
+            </p>
+          </div>
+          <div 
+            className="rounded-2xl border border-lightest-navy/20 px-6 py-8 shadow-sm"
+            style={{
+              background: 'radial-gradient(circle at 15% 20%, rgba(37, 99, 235, 0.22), transparent 50%), radial-gradient(circle at 80% 20%, rgba(37, 99, 235, 0.18), transparent 45%), var(--color-light-navy)'
+            }}
+          >
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white/80 mb-2">{t('process.step2.number')}</p>
+            <h3 className="text-lg font-semibold text-white mb-2">{t('process.step2.title')}</h3>
+            <p className="text-sm text-white/90">
+              {t('process.step2.text')}
+            </p>
+          </div>
+          <div 
+            className="rounded-2xl border border-lightest-navy/20 px-6 py-8 shadow-sm"
+            style={{
+              background: 'radial-gradient(circle at 15% 20%, rgba(37, 99, 235, 0.22), transparent 50%), radial-gradient(circle at 80% 20%, rgba(37, 99, 235, 0.18), transparent 45%), var(--color-light-navy)'
+            }}
+          >
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white/80 mb-2">{t('process.step3.number')}</p>
+            <h3 className="text-lg font-semibold text-white mb-2">{t('process.step3.title')}</h3>
+            <p className="text-sm text-white/90">
+              {t('process.step3.text')}
+            </p>
+          </div>
+          <div 
+            className="rounded-2xl border border-lightest-navy/20 px-6 py-8 shadow-sm"
+            style={{
+              background: 'radial-gradient(circle at 15% 20%, rgba(37, 99, 235, 0.22), transparent 50%), radial-gradient(circle at 80% 20%, rgba(37, 99, 235, 0.18), transparent 45%), var(--color-light-navy)'
+            }}
+          >
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white/80 mb-2">{t('process.step4.number')}</p>
+            <h3 className="text-lg font-semibold text-white mb-2">{t('process.step4.title')}</h3>
+            <p className="text-sm text-white/90">
+              {t('process.step4.text')}
+            </p>
+          </div>
+        </div>
+        </div>
+      </section>
+
       {/* Tools & Technologies */}
-      <div className='container-page pt-36 pb-0'>
+      <div className='section-tech-gradient container-page py-20'>
           <SectionHeading
                 kicker={t('technologies.title')}
                 title={t('technologies.title')}
@@ -135,58 +208,36 @@ export default function Home(){
       </div>
 
       {/* LOGO CLOUD */}
-      <section className="pt-30 pb-46 px-10">
-        <SectionHeading
-          title={t('clients.title')}
-          subtitle={t('clients.text')}
-        />
-  
-        <LogoCloud />
-      </section>
-
-      {/* Latest Posts */}
-      <section id="latest-blogs" className='px-10 lg:px-16 xl:px-36 py-20'>
-        <SectionHeading
-            title={t('latestPosts.title')}
-            subtitle={t('latestPosts.subtitle')}
-        />
-        
-        <LatestPosts />
-
-        {/* View All Button */}
-        <div className="mt-12 text-center">
-          <a href="/blog" className="btn-ghost p-4">
-            {t('latestPosts.viewAll')}
-          </a>
+      <section className="section-white py-40 px-10">
+        <div className="max-w-7xl mx-auto">
+          <SectionHeading
+            title={t('clients.title')}
+            subtitle={t('clients.text')}
+          />
+    
+          <LogoCloud />
         </div>
       </section>
 
-      {/* Tech News Carousel */}
-      <section className="px-10 lg:px-16 xl:px-36 py-20">
-        <SectionHeading
-          title={t('techNews.title')}
-          subtitle={t('techNews.subtitle')}
-        />
-        <TechNewsCarousel />
-      </section>
-
       {/* KARRIERA (teaser) */}
-      <section id="karriera" className="py-20 px-10 lg:px-16 xl:px-36 md:py-28 border-b border-lightest-navy/10">
-        <SectionHeading
-          title={t('careers.teaserTitle')}
-          subtitle={t('careers.teaserText')}
-        />
+      <section id="karriera" className="section-tech-gradient py-20 px-10 lg:px-16 xl:px-36 md:py-28">
+        <div className="max-w-7xl mx-auto">
+          <SectionHeading
+            title={t('careers.teaserTitle')}
+            subtitle={t('careers.teaserText')}
+          />
 
-        {/* Meet our team – carousel */}
-        <TeamCarousel />
+          {/* Meet our team – carousel */}
+          <TeamCarousel />
 
-        <div className="mt-22 text-center">
-          <a href="/careers" className="btn-ghost p-4">{t('careers.viewOpenings')}</a>
+          <div className="mt-22 text-center">
+            <a href="/careers" className="btn-ghost p-4">{t('careers.viewOpenings')}</a>
+          </div>
         </div>
       </section>
 
       {/* KONTAKT – CTA */}
-      <section id="kontakt" className="my-24 md:mt-12 px-10 lg:px-16 xl:px-36 pb-16">
+      <section id="kontakt" className="px-10 lg:px-16 xl:px-36 py-20">
         <CTA />
       </section>
     </div>
