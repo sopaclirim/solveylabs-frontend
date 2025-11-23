@@ -43,33 +43,33 @@ export default function Home(){
         
         {/* Hero Content Overlay - mbi slider */}
         <div className="relative z-10 h-full flex items-center justify-center pointer-events-none pt-12 sm:pt-16 md:pt-20 lg:pt-24">
-          <div className="w-full max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-6xl px-3 sm:px-4 md:px-6 lg:px-8 xl:px-10 text-center">
+          <div className="w-full max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-6xl px-3 sm:px-4 md:px-6 lg:px-8 xl:px-10">
             {/* "Hello, we are" text */}
-            <p className="text-accent text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-medium mb-0.5 xs:mb-1 sm:mb-1 md:mb-1.5 lg:mb-2 xl:mb-3 tracking-wide drop-shadow-lg">
+            <p className="text-accent text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-medium mb-1 xs:mb-1.5 sm:mb-2 md:mb-2.5 lg:mb-3 xl:mb-4 tracking-wide drop-shadow-lg text-center">
               <AnimatedText text={t('hero.hi')} delay={0.1} delayPerLetter={0.02} />
             </p>
             
             {/* "Solvey Labs" main title */}
-            <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold text-white mb-0.5 xs:mb-1 sm:mb-1 md:mb-1.5 lg:mb-2 xl:mb-3 leading-tight drop-shadow-2xl px-1 sm:px-2">
+            <h1 className="text-4xl xs:text-4xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold text-white mb-1.5 xs:mb-2 sm:mb-2.5 md:mb-3 lg:mb-4 xl:mb-4 leading-tight drop-shadow-2xl px-1 sm:px-2 text-center">
               <AnimatedText text={t('hero.title')} delay={0.2} delayPerLetter={0.03} />
             </h1>
             
             {/* "We build the digital future" subtitle */}
-            <h2 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold text-lightest-slate mb-1.5 xs:mb-2 sm:mb-2 md:mb-2.5 lg:mb-3 xl:mb-4 2xl:mb-6 leading-tight drop-shadow-lg px-1 sm:px-2">
+            <h3 className="text-center text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold text-lightest-slate mb-2.5 xs:mb-3 sm:mb-3.5 md:mb-4 lg:mb-5 xl:mb-6 2xl:mb-8 leading-tight drop-shadow-lg px-1 sm:px-2 text-center">
               <AnimatedText text={t('hero.subtitle')} delay={0.4} delayPerLetter={0.02} />
-            </h2>
+            </h3>
             
             {/* Tagline paragraph */}
-            <p className="max-w-xs sm:max-w-md md:max-w-xl lg:max-w-2xl xl:max-w-3xl mx-auto text-base xs:text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-light-slate leading-relaxed drop-shadow-md px-2 sm:px-3 md:px-4 lg:px-6 mb-0">
+            <p className="max-w-xs sm:max-w-md md:max-w-xl lg:max-w-2xl xl:max-w-3xl mx-auto text-base xs:text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-light-slate leading-relaxed drop-shadow-md px-2 sm:px-3 md:px-4 lg:px-6 mb-0 text-center">
               <AnimatedText text={t('hero.tagline')} delay={0.6} delayPerLetter={0.015} />
             </p>
 
             {/* Buttons */}
-            <div className="mt-2 xs:mt-3 sm:mt-4 md:mt-5 lg:mt-6 xl:mt-8 flex flex-col sm:flex-row items-center justify-center gap-2 xs:gap-2.5 sm:gap-3 md:gap-3.5 lg:gap-4 px-2 pointer-events-auto">
-              <a href="/contact" className="btn-primary text-xs xs:text-sm sm:text-base md:text-lg px-3 xs:px-4 sm:px-5 md:px-6 lg:px-7 xl:px-8 py-1.5 xs:py-2 sm:py-2.5 md:py-3 lg:py-3.5 xl:py-4 w-full sm:w-auto min-w-[120px] xs:min-w-[140px] sm:min-w-[150px] md:min-w-[170px] lg:min-w-[190px] xl:min-w-[200px] shadow-xl">
+            <div className="mt-2 xs:mt-3 sm:mt-4 md:mt-5 lg:mt-6 xl:mt-8 flex flex-col sm:flex-row items-center justify-center gap-2 xs:gap-2.5 sm:gap-3 md:gap-3.5 lg:gap-4 px-4 sm:px-2 pointer-events-auto">
+              <a href="/contact" className="btn-primary text-xs xs:text-sm sm:text-base md:text-lg px-4 xs:px-5 sm:px-5 md:px-6 lg:px-7 xl:px-8 py-3 xs:py-2.5 sm:py-2.5 md:py-3 lg:py-3.5 xl:py-4 w-full sm:w-auto min-w-[120px] xs:min-w-[140px] sm:min-w-[150px] md:min-w-[170px] lg:min-w-[190px] xl:min-w-[200px] shadow-xl text-center">
                 {t('hero.cta')}
               </a>
-              <a href="#sherbimet" className="btn-ghost text-xs xs:text-sm sm:text-base md:text-lg px-3 xs:px-4 sm:px-5 md:px-6 lg:px-7 xl:px-8 py-1.5 xs:py-2 sm:py-2.5 md:py-3 lg:py-3.5 xl:py-4 w-full sm:w-auto min-w-[120px] xs:min-w-[140px] sm:min-w-[150px] md:min-w-[170px] lg:min-w-[190px] xl:min-w-[200px] bg-white/10 backdrop-blur-md border-white/30 text-white hover:bg-white/20 shadow-xl">
+              <a href="#sherbimet" className="btn-ghost text-xs xs:text-sm sm:text-base md:text-lg px-4 xs:px-5 sm:px-5 md:px-6 lg:px-7 xl:px-8 py-2 xs:py-2.5 sm:py-2.5 md:py-3 lg:py-3.5 xl:py-4 w-full sm:w-auto min-w-[120px] xs:min-w-[140px] sm:min-w-[150px] md:min-w-[170px] lg:min-w-[190px] xl:min-w-[200px] bg-white/10 backdrop-blur-md border-white/30 text-white hover:bg-white/20 shadow-xl text-center">
                 {t('services.title')}
               </a>
             </div>
