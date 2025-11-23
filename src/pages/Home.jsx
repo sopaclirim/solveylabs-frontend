@@ -43,14 +43,14 @@ export default function Home(){
         
         {/* Hero Content Overlay - mbi slider */}
         <div className="relative z-10 h-full flex items-center justify-center pointer-events-none pt-12 sm:pt-16 md:pt-20 lg:pt-24">
-          <div className="w-full max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-6xl px-3 sm:px-4 md:px-6 lg:px-8 xl:px-10">
+          <div className="w-full max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-6xl px-1 sm:px-0 md:px-6 lg:px-8 xl:px-10">
             {/* "Hello, we are" text */}
             <p className="text-accent text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-medium mb-1 xs:mb-1.5 sm:mb-2 md:mb-2.5 lg:mb-3 xl:mb-4 tracking-wide drop-shadow-lg text-center">
               <AnimatedText text={t('hero.hi')} delay={0.1} delayPerLetter={0.02} />
             </p>
             
             {/* "Solvey Labs" main title */}
-            <h1 className="text-4xl xs:text-4xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold text-white mb-1.5 xs:mb-2 sm:mb-2.5 md:mb-3 lg:mb-4 xl:mb-4 leading-tight drop-shadow-2xl px-1 sm:px-2 text-center">
+            <h1 className="text-5xl xs:text-4xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold text-white mb-1.5 xs:mb-2 sm:mb-2.5 md:mb-3 lg:mb-4 xl:mb-4 leading-tight drop-shadow-2xl px-1 sm:px-2 text-center">
               <AnimatedText text={t('hero.title')} delay={0.2} delayPerLetter={0.03} />
             </h1>
             
