@@ -110,6 +110,18 @@
     "logoAlt": "SOLVEY Technology & Software"
   },
 
+  "chatbot": {
+    "title": "KI-Assistent",
+    "subtitle": "Wir sind hier, um zu helfen",
+    "welcome": "Hallo! Ich bin der KI-Assistent von Solvey Labs. Wie kann ich Ihnen heute helfen?",
+    "placeholder": "Geben Sie Ihre Nachricht ein...",
+    "send": "Senden",
+    "close": "Schließen",
+    "toggle": "Chatbot öffnen/schließen",
+    "hint": "Enter drücken zum Senden, Shift+Enter für neue Zeile",
+    "error": "Ups! Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut."
+  },
+
   "team": {
     "prevTeam": "Vorheriges Team",
     "nextTeam": "Nächstes Team",

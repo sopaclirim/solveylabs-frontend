@@ -110,6 +110,18 @@
     "logoAlt": "SOLVEY Technology & Software"
   },
 
+  "chatbot": {
+    "title": "Assistant IA",
+    "subtitle": "Nous sommes là pour vous aider",
+    "welcome": "Bonjour ! Je suis l'assistant IA de Solvey Labs. Comment puis-je vous aider aujourd'hui ?",
+    "placeholder": "Tapez votre message...",
+    "send": "Envoyer",
+    "close": "Fermer",
+    "toggle": "Ouvrir/Fermer le chatbot",
+    "hint": "Appuyez sur Entrée pour envoyer, Maj+Entrée pour une nouvelle ligne",
+    "error": "Oups ! Quelque chose s'est mal passé. Veuillez réessayer."
+  },
+
   "team": {
     "prevTeam": "Équipe précédente",
     "nextTeam": "Équipe suivante",

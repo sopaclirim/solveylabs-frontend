@@ -20,8 +20,8 @@ export default function Navbar() {
     }`;
 
   return (
-    <header className="sticky top-0 z-50 backdrop-blur-sm bg-dark-navy/95 border-b border-lightest-navy/20 shadow-[0_4px_22px_rgba(0,0,0,0.5)]">
-      <nav className="flex items-center justify-between py-6 px-4 lg:px-16 xl:px-36">
+    <header className="sticky top-0 z-50 backdrop-blur-md bg-dark-navy/40 border-b border-lightest-navy/20 shadow-[0_2px_10px_rgba(0,0,0,0.2)] transition-all duration-300">
+      <nav className="flex items-center justify-between py-3 md:py-4 px-4 lg:px-16 xl:px-36">
         <Link to="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
           <img 
             src={logoImage} 
@@ -35,7 +35,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop */}
-        <div className="hidden md:flex items-center gap-5 text-lightest-slate">
+        <div className="hidden md:flex items-center gap-6 lg:gap-8 text-lightest-slate">
           <NavLink to="/" className={navClass} end>{t('nav.home')}</NavLink>
           <NavLink to="/blog" className={navClass}>{t('nav.blog')}</NavLink>
           <NavLink to="/careers" className={navClass}>{t('nav.careers')}</NavLink>
@@ -66,7 +66,7 @@ export default function Navbar() {
       </nav>
 
       <div id="mobile-menu" className={`md:hidden border-t border-lightest-navy/20 mobile-menu ${open ? 'mobile-menu-open' : ''}`}>
-        <div className="mobile-menu-content px-6 pt-4 pb-4 flex flex-col gap-3 text-lightest-slate bg-dark-navy/95 backdrop-blur-sm">
+        <div className="mobile-menu-content px-6 pt-4 pb-4 flex flex-col gap-3 text-lightest-slate bg-dark-navy/50 backdrop-blur-md">
           <NavLink to="/" className={`${navClass} pt-2`} end onClick={() => setOpen(false)}>{t('nav.home')}</NavLink>
           <NavLink to="/blog" className={navClass} onClick={() => setOpen(false)}>{t('nav.blog')}</NavLink>
           <NavLink to="/careers" className={navClass} onClick={() => setOpen(false)}>{t('nav.careers')}</NavLink>

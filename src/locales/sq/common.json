@@ -111,6 +111,18 @@
     "logoAlt": "SOLVEY Technology & Software"
   },
 
+  "chatbot": {
+    "title": "Asistent AI",
+    "subtitle": "Ne jemi këtu për të ndihmuar",
+    "welcome": "Përshëndetje! Unë jam asistenti AI i Solvey Labs. Si mund t'ju ndihmoj sot?",
+    "placeholder": "Shkruani mesazhin tuaj...",
+    "send": "Dërgo",
+    "close": "Mbyll",
+    "toggle": "Hap/Mbyll chatbot",
+    "hint": "Shtypni Enter për të dërguar, Shift+Enter për rresht të ri",
+    "error": "Ups! Diçka shkoi keq. Ju lutem provoni përsëri."
+  },
+
   "team": {
     "prevTeam": "Ekipi i mëparshëm",
     "nextTeam": "Ekipi tjetër",

@@ -24,14 +24,14 @@ export default function Footer() {
     ];
 
     return (
-        <footer className="pt-26 border-t border-lightest-navy/10">
-            <div className="py-10 px-10 lg:px-16 xl:px-36">
+        <footer className="pt-20 md:pt-26 border-t border-lightest-navy/10 bg-dark-navy/50">
+            <div className="py-12 md:py-16 px-10 lg:px-16 xl:px-36">
                 {/* grid 4 kolona në desktop, 1 në mobile */}
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-lightest-slate">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-12 text-lightest-slate">
                     {/* About / Address */}
                     <div>
-                        <h3 className="text-lg font-semibold mb-3">{t("brand")}</h3>
-                        <p className="text-slate mb-4">{t("footer.tagline")}</p>
+                        <h3 className="text-xl font-bold mb-4 text-lightest-slate">{t("brand")}</h3>
+                        <p className="text-slate mb-6 leading-relaxed">{t("footer.tagline")}</p>
 
                         <address className="not-italic text-sm leading-6 text-light-slate">
                             <div className="font-medium text-lightest-slate">{t("footer.office")}</div>
@@ -46,8 +46,8 @@ export default function Footer() {
 
                     {/* Services */}
                     <div>
-                        <h3 className="text-lg font-semibold mb-3">{t("footer.services")}</h3>
-                        <ul className="space-y-2 text-slate">
+                        <h3 className="text-xl font-bold mb-4 text-lightest-slate">{t("footer.services")}</h3>
+                        <ul className="space-y-3 text-slate">
                             <li><Link to="/#sherbimet" className="hover:text-accent">{t("footer.s_custom")}</Link></li>
                             <li><Link to="/#sherbimet" className="hover:text-accent">{t("footer.s_web")}</Link></li>
                             <li><Link to="/#sherbimet" className="hover:text-accent">{t("footer.s_mobile")}</Link></li>
@@ -57,8 +57,8 @@ export default function Footer() {
 
                     {/* Links & Social */}
                     <div>
-                        <h3 className="text-lg font-semibold mb-3">{t("footer.links")}</h3>
-                        <ul className="space-y-2 text-slate mb-4">
+                        <h3 className="text-xl font-bold mb-4 text-lightest-slate">{t("footer.links")}</h3>
+                        <ul className="space-y-3 text-slate mb-6">
                             <li><Link to="/blog" className="hover:text-accent">{t("nav.blog")}</Link></li>
                             <li><Link to="/careers" className="hover:text-accent">{t("nav.careers")}</Link></li>
                             <li><Link to="/contact" className="hover:text-accent">{t("nav.contact")}</Link></li>
@@ -85,9 +85,9 @@ export default function Footer() {
 
                     {/* Payments & Location */}
                     <div>
-                        <h3 className="text-lg font-semibold mb-3">{t("footer.payments")}</h3>
-                        <p className="text-slate text-sm mb-3">{t("footer.weAccept")}</p>
-                        <div className="flex flex-wrap items-center gap-3 mb-6">
+                        <h3 className="text-xl font-bold mb-4 text-lightest-slate">{t("footer.payments")}</h3>
+                        <p className="text-slate text-sm mb-4">{t("footer.weAccept")}</p>
+                        <div className="flex flex-wrap items-center gap-3 mb-8">
                             {payments.map(p => (
                                 <span
                                     key={p.label}
@@ -100,9 +100,9 @@ export default function Footer() {
                             ))}
                         </div>
 
-                        <h3 className="text-lg font-semibold mb-3">{t("footer.findUs")}</h3>
-                        <div className="overflow-hidden rounded-xl border border-white/10 bg-white/5">
-                            <div className="overflow-hidden rounded-xl border border-white/10 bg-white/5">
+                        <h3 className="text-xl font-bold mb-4 text-lightest-slate">{t("footer.findUs")}</h3>
+                        <div className="overflow-hidden rounded-xl border border-white/10 bg-white/5 hover:border-accent/30 transition-colors">
+                            <div className="overflow-hidden rounded-xl">
                                 <div className="aspect-video">
                                     <iframe
                                         title={t("footer.officeMap")}
@@ -118,10 +118,10 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <hr className="border-lightest-navy/10 mt-12" />
+                <hr className="border-lightest-navy/10 mt-12 md:mt-16" />
 
                 {/* Bottom bar */}
-                <div className="mt-10 flex flex-col md:flex-row items-center justify-between gap-3 text-slate text-sm">
+                <div className="mt-8 md:mt-12 flex flex-col md:flex-row items-center justify-between gap-4 text-slate text-sm md:text-base">
                     <p>&copy; {year} {t("brand")}. {t("footer.rights")}</p>
                     <p className="opacity-80">{t("footer.madeIn")}</p>
                 </div>

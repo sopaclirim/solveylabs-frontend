@@ -1,6 +1,7 @@
 import { Outlet } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import ChatBot from './components/ChatBot'
 
 export default function App(){
   return (
@@ -16,6 +17,9 @@ export default function App(){
         </main>
       </div>
       <Footer />
+      
+      {/* AI ChatBot Widget */}
+      <ChatBot />
     </div>
   )
 }
