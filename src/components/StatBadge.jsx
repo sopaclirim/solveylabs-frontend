@@ -6,7 +6,7 @@ export default function StatBadge({ value, label }) {
         background: 'radial-gradient(circle at 15% 20%, rgba(44, 116, 179, 0.25), transparent 50%), radial-gradient(circle at 80% 20%, rgba(59, 154, 225, 0.2), transparent 45%), var(--color-light-navy)'
       }}
     >
-      <div className="text-xl xs:text-2xl sm:text-3xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-bold gradient-text text-center leading-tight mb-0.5 xs:mb-1 sm:mb-1.5 md:mb-2 lg:mb-2">{value}</div>
+      <div className="text-2xl xs:text-2xl sm:text-3xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-hero font-bold gradient-text text-center leading-tight mb-0.5 xs:mb-1 sm:mb-1.5 md:mb-2 lg:mb-2">{value}</div>
       <div className="text-xs xs:text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl text-white/90 mt-0.5 xs:mt-1 sm:mt-1.5 md:mt-2 lg:mt-2 leading-tight font-medium">{label}</div>
     </div>
   )
