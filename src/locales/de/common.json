@@ -13,7 +13,7 @@
 
   "hero": {
     "hi": "Hallo, wir sind",
-    "title": "Solvey Labs.",
+    "title": "Solvey Labs",
     "subtitle": "Wir bauen die digitale Zukunft.",
     "tagline": "Wir entwickeln moderne Websites & Apps mit Fokus auf Performance, Sicherheit und minimalistisches Design.",
     "cta": "Projekt starten"
@@ -105,6 +105,7 @@
 
   "common": { 
     "loading": "Lädt…",
+    "sending": "Wird gesendet...",
     "error": "Fehler",
     "menu": "Menü",
     "logoAlt": "SOLVEY Technology & Software"

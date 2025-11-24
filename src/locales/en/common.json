@@ -104,6 +104,7 @@
 
   "common": { 
     "loading": "Loading…",
+    "sending": "Sending...",
     "error": "Error",
     "menu": "Menu",
     "logoAlt": "SOLVEY Technology & Software"

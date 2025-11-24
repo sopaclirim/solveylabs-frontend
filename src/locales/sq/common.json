@@ -13,7 +13,7 @@
 
   "hero": {
     "hi": "Përshëndetje, ne jemi",
-    "title": "Solvey Labs.",
+    "title": "Solvey Labs",
     "subtitle": "Ne ndërtojmë të ardhmen dixhitale.",
     "tagline": "Ndërtojmë faqe & aplikacione moderne me fokus në performancë, siguri dhe dizajn minimalist.",
     "cta": "Le të fillojmë një projekt!"
@@ -106,6 +106,7 @@
 
   "common": { 
     "loading": "Duke u ngarkuar…",
+    "sending": "Duke dërguar...",
     "error": "Gabim",
     "menu": "Menu",
     "logoAlt": "SOLVEY Technology & Software"
